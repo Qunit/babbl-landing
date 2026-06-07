@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Babbl – Langer zelfstandig thuis</title>
+  <meta name="description" content="Babbl helpt ouderen langer zelfstandig, verbonden en met vertrouwen thuis te wonen."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">babbl<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
+      <li><a href="voor-ouderen.html">Voor ouderen</a></li>
+      <li><a href="voor-familie.html">Voor familie</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+      <li><a href="#faq">Veelgestelde vragen</a></li>
+    </ul>
+    <a href="#wachtlijst" class="nav-cta">Kom op de wachtlijst</a>
+    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="hoe-het-werkt.html">Hoe het werkt</a>
+    <a href="voor-ouderen.html">Voor ouderen</a>
+    <a href="voor-familie.html">Voor familie</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="voor-organisaties.html">Voor organisaties</a>
+    <a href="#faq">Veelgestelde vragen</a>
+    <a href="#wachtlijst" class="nav-cta btn btn-primary">Kom op de wachtlijst</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="tag">Langer thuis</span>
+        <h1 class="hero-title">Langer zelfstandig thuis. Minder zorgen voor familie.</h1>
+        <p class="hero-sub">Babbl helpt ouderen met dagelijkse ondersteuning, praktische vragen en contact met familie. Zodat zelfstandig wonen langer mogelijk blijft.</p>
+        <div class="hero-actions">
+          <a href="#wachtlijst" class="btn btn-primary btn-lg">Kom op de wachtlijst</a>
+          <a href="hoe-het-werkt.html" class="btn btn-secondary btn-lg">Ontdek Babbl</a>
+        </div>
+        <div class="hero-benefits">
+          <span class="hero-benefit">Ondersteunt zelfstandigheid</span>
+          <span class="hero-benefit">Houdt familie betrokken</span>
+          <span class="hero-benefit">Privacy als uitgangspunt</span>
+        </div>
+      </div>
+      <div class="hero-image img-block">
+        <img src="assets/01-hero.png" alt="Oudere vrouw thuis met Babbl" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STATS BAR ──────────────────────────────────────── -->
+<div class="bg-white" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container" style="padding-top:32px;padding-bottom:32px;">
+    <div style="display:flex;gap:48px;justify-content:center;flex-wrap:wrap;align-items:center;">
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">1 op 4</div>
+        <div style="font-size:.875rem;color:var(--text-muted);margin-top:4px;">Nederlanders boven 65 woont alleen</div>
+      </div>
+      <div style="width:1px;height:48px;background:var(--border);"></div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">92%</div>
+        <div style="font-size:.875rem;color:var(--text-muted);margin-top:4px;">Ouderen wil zo lang mogelijk thuis wonen</div>
+      </div>
+      <div style="width:1px;height:48px;background:var(--border);"></div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">3,5 mln</div>
+        <div style="font-size:.875rem;color:var(--text-muted);margin-top:4px;">Mantelzorgers in Nederland</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PROBLEM ────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <h2 class="problem-title">De wereld wordt ingewikkelder. Ouder worden ook.</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-card-icon">📅</div>
+        <h3>Belangrijke afspraken vergeten</h3>
+        <p>Medicatie, ziekenhuisafspraken en dagelijkse planning vragen steeds meer aandacht en overzicht.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">📄</div>
+        <h3>Brieven en formulieren begrijpen</h3>
+        <p>Steeds meer communicatie van overheid en zorg verloopt digitaal en vraagt om nieuwe vaardigheden.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">🤝</div>
+        <h3>Minder sociaal contact</h3>
+        <p>Familie woont niet altijd dichtbij. Eenzaamheid onder ouderen neemt toe.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-icon">❤️</div>
+        <h3>Mantelzorg geeft zorgen</h3>
+        <p>Kinderen en partners willen helpen maar hebben beperkte tijd en wonen soms ver weg.</p>
+      </div>
+    </div>
+    <div class="problem-footer">
+      <strong>Babbl ondersteunt waar nodig</strong> zonder zelfstandigheid weg te nemen.
+    </div>
+  </div>
+</section>
+
+<!-- ─── SOLUTION ───────────────────────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="solution-inner">
+      <div class="solution-content">
+        <div>
+          <span class="tag">Hoe Babbl werkt</span>
+          <h2 class="solution-title" style="margin-top:16px;">Een vertrouwde hulp in huis</h2>
+          <p style="font-size:1.0625rem;color:var(--text-muted);line-height:1.7;">Geen ingewikkelde schermen of apps. Gewoon praten, zoals je dat met iemand doet die je vertrouwt.</p>
+        </div>
+        <div class="solution-pillars">
+          <div class="solution-pillar">
+            <div class="solution-pillar-icon">💬</div>
+            <div>
+              <h3>Gewoon praten</h3>
+              <p>Stel vragen zoals je dat aan een vertrouwd persoon zou doen. Geen knoppen, geen menu's.</p>
+            </div>
+          </div>
+          <div class="solution-pillar">
+            <div class="solution-pillar-icon">🗓️</div>
+            <div>
+              <h3>Persoonlijke ondersteuning</h3>
+              <p>Herinneringen, afspraken en hulp bij dagelijkse zaken die ertoe doen.</p>
+            </div>
+          </div>
+          <div class="solution-pillar">
+            <div class="solution-pillar-icon">👨‍👩‍👧</div>
+            <div>
+              <h3>Familie dichtbij</h3>
+              <p>Betrek familie wanneer dat nodig of fijn is. Verbondenheid op afstand.</p>
+            </div>
+          </div>
+        </div>
+        <a href="hoe-het-werkt.html" class="btn btn-secondary" style="align-self:flex-start;">Meer over hoe Babbl werkt</a>
+      </div>
+      <div class="solution-image">
+        <img src="assets/18-device-in-living-room-portrait.png" alt="Babbl apparaat in woonkamer" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── USE CASES ──────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">In de praktijk</span>
+      <h2 style="margin-top:16px;">Zo werkt het in het dagelijks leven</h2>
+      <p>Babbl verbindt ouderen en familie op de momenten die er echt toe doen.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+
+      <!-- Use case 1 -->
+      <div style="background:var(--bg-card);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="width:40px;height:40px;background:#FEF3EE;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;">💊</div>
+          <span style="font-size:.8rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em;text-transform:uppercase;">Medicatie</span>
+        </div>
+        <h3 style="font-size:1.125rem;margin-bottom:20px;">"Heb ik mijn pillen al ingenomen?"</h3>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">1</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Oma vraagt aan Babbl</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Babbl, heb ik mijn bloeddrukpillen al ingenomen vandaag?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">2</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl antwoordt</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Ik zie dat u ze vandaag nog niet heeft ingenomen. Wilt u dat ik uw dochter een berichtje stuur?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">3</div>
+            </div>
+            <div>
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Familie-app notificatie</div>
+              <div style="background:#1C1208;border-radius:10px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start;">
+                <span style="font-size:1rem;">📱</span>
+                <div>
+                  <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Babbl · Nu</div>
+                  <div style="font-size:.8125rem;color:#fff;">Uw moeder heeft haar medicatie vandaag nog niet ingenomen.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use case 2 -->
+      <div style="background:var(--bg-card);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="width:40px;height:40px;background:#EEF3FE;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;">🏥</div>
+          <span style="font-size:.8rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em;text-transform:uppercase;">Afspraak</span>
+        </div>
+        <h3 style="font-size:1.125rem;margin-bottom:20px;">"Wanneer moet ik naar het ziekenhuis?"</h3>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">1</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Opa vraagt aan Babbl</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Babbl, ik weet niet meer wanneer mijn afspraak bij de cardioloog is."</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">2</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl antwoordt</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"U heeft dinsdag 14 januari om 10:30 een afspraak. Zal ik uw zoon vragen u die dag te brengen?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">3</div>
+            </div>
+            <div>
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Familie-app notificatie</div>
+              <div style="background:#1C1208;border-radius:10px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start;">
+                <span style="font-size:1rem;">📱</span>
+                <div>
+                  <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Babbl · Nu</div>
+                  <div style="font-size:.8125rem;color:#fff;">Uw vader heeft dinsdag een afspraak bij de cardioloog. Hij vraagt of u hem kunt brengen.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use case 3 -->
+      <div style="background:var(--bg-card);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="width:40px;height:40px;background:#FEEEE8;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;">😔</div>
+          <span style="font-size:.8rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em;text-transform:uppercase;">Welzijn</span>
+        </div>
+        <h3 style="font-size:1.125rem;margin-bottom:20px;">"Ik voel me niet zo goed vandaag"</h3>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">1</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Oma vertelt Babbl</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Babbl, ik voel me vandaag niet zo lekker. Mijn hoofd doet een beetje pijn."</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">2</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl antwoordt</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Dat spijt me. Heeft u al iets gedronken vandaag? En wilt u dat ik uw dochter laat weten hoe u zich voelt?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">3</div>
+            </div>
+            <div>
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Familie-app notificatie</div>
+              <div style="background:#1C1208;border-radius:10px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start;">
+                <span style="font-size:1rem;">📱</span>
+                <div>
+                  <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Babbl · Nu</div>
+                  <div style="font-size:.8125rem;color:#fff;">Uw moeder geeft aan dat ze zich niet goed voelt. Ze heeft hoofdpijn. Even bellen?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use case 4 -->
+      <div style="background:var(--bg-card);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+          <div style="width:40px;height:40px;background:#EEF8EE;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;">📄</div>
+          <span style="font-size:.8rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em;text-transform:uppercase;">Brief</span>
+        </div>
+        <h3 style="font-size:1.125rem;margin-bottom:20px;">"Ik snap deze brief niet"</h3>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">1</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Opa vraagt aan Babbl</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Babbl, ik heb een brief van het CAK. Ik snap er niets van."</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">2</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl vraagt om een foto</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Kunt u een foto van de brief maken? Dan lees ik mee en leg ik uit wat er staat."</div>
+              <div style="margin-top:8px;display:inline-flex;align-items:center;gap:6px;background:var(--bg-muted);border-radius:8px;padding:6px 10px;">
+                <span style="font-size:.875rem;">📷</span>
+                <span style="font-size:.75rem;color:var(--text-muted);">Foto gemaakt via Babbl-app</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">3</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:20px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl legt de brief uit</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Dit is een brief over uw eigen bijdrage voor zorg. U moet vóór 1 februari reageren. Zal ik de foto doorsturen naar uw dochter zodat zij u kan helpen?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">4</div>
+            </div>
+            <div>
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Familie-app — met foto</div>
+              <div style="background:#1C1208;border-radius:10px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start;">
+                <span style="font-size:1rem;">📱</span>
+                <div>
+                  <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Babbl · Nu</div>
+                  <div style="font-size:.8125rem;color:#fff;">Uw vader heeft een brief ontvangen van het CAK. Hij begrijpt hem niet. Deadline: 1 februari. <span style="opacity:.6;">📎 brief-cak.jpg</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      <!-- Use case 5: veiligheid — full width -->
+      <div style="grid-column:1/-1;background:linear-gradient(135deg,#FDF6F0,#F5EBE0);border:1.5px solid #E8D5C4;border-radius:var(--radius-lg);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+            <div style="width:40px;height:40px;background:#FEE8D5;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.25rem;">🛡️</div>
+            <span style="font-size:.8rem;font-weight:600;color:var(--text-muted);letter-spacing:.04em;text-transform:uppercase;">Veiligheid</span>
+          </div>
+          <h3 style="font-size:1.25rem;margin-bottom:12px;">Herkennen van oplichting, phishing en hoaxes</h3>
+          <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Ouderen zijn een veelgekozen doelgroep voor oplichters. Nepberichten van de bank, verdachte telefoontjes, hoaxes over medicijnen — Babbl helpt te herkennen wat echt is en wat niet. En schakelt familie in wanneer dat nodig is.</p>
+          <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="background:#FEE8D5;color:#A84E39;border-radius:50px;padding:5px 12px;font-size:.8rem;font-weight:500;">Nep-bankberichten</span>
+            <span style="background:#FEE8D5;color:#A84E39;border-radius:50px;padding:5px 12px;font-size:.8rem;font-weight:500;">Verdachte telefoontjes</span>
+            <span style="background:#FEE8D5;color:#A84E39;border-radius:50px;padding:5px 12px;font-size:.8rem;font-weight:500;">Phishing e-mails</span>
+            <span style="background:#FEE8D5;color:#A84E39;border-radius:50px;padding:5px 12px;font-size:.8rem;font-weight:500;">Hoaxes en desinformatie</span>
+            <span style="background:#FEE8D5;color:#A84E39;border-radius:50px;padding:5px 12px;font-size:.8rem;font-weight:500;">Nepfacturen</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:rgba(168,78,57,.12);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--primary);flex-shrink:0;">1</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:16px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Opa vraagt Babbl</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:#fff;border-radius:10px;padding:10px 14px;font-style:italic;">"Babbl, ik kreeg een telefoontje dat ik mijn bankpas moet afgeven aan een koerier. Is dat normaal?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:rgba(168,78,57,.12);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--primary);flex-shrink:0;">2</div>
+              <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
+            </div>
+            <div style="padding-bottom:16px;">
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl waarschuwt</div>
+              <div style="font-size:.875rem;color:var(--text-muted);background:#fff;border-radius:10px;padding:10px 14px;font-style:italic;">"Dit is bijna zeker oplichting. Echte banken vragen nooit om uw pas of pincode af te geven. Hang op en doe niets. Zal ik uw dochter nu direct waarschuwen?"</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+              <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">3</div>
+            </div>
+            <div>
+              <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Familie-app notificatie — direct</div>
+              <div style="background:#1C1208;border-radius:10px;padding:10px 14px;display:flex;gap:10px;align-items:flex-start;">
+                <span style="font-size:1rem;">🚨</span>
+                <div>
+                  <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-bottom:2px;">Babbl · Nu</div>
+                  <div style="font-size:.8125rem;color:#fff;">Uw vader is mogelijk benaderd door oplichters (bankhelpdeskfraude). Hij heeft de oproep niet beantwoord. Neem contact op.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <p style="font-size:.9375rem;color:var(--text-muted);margin-bottom:16px;">Familie blijft altijd in controle — meldingen alleen met toestemming van de gebruiker.</p>
+      <a href="voor-familie.html" class="btn btn-secondary">Meer over de familie-app</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PLATFORM ───────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="platform-inner">
+      <div class="platform-content">
+        <span class="tag">Open platform</span>
+        <h2 class="platform-title" style="margin-top:16px;">Groeit mee met de zorg om iemand heen</h2>
+        <p class="platform-text">Iedere situatie is anders. Babbl is ontworpen als een open platform waarop vertrouwde organisaties hun eigen ondersteuning kunnen aanbieden.</p>
+        <p class="platform-text">Denk aan:</p>
+        <ul class="platform-list">
+          <li>Ondersteuning vanuit zorgorganisaties</li>
+          <li>Medicatiebegeleiding</li>
+          <li>Uitleg bij brieven van overheid of zorgverzekeraar</li>
+          <li>Lokale welzijnsdiensten en gemeentelijke informatie</li>
+          <li>Praktische hulp thuis</li>
+        </ul>
+        <p class="platform-text" style="margin-top:8px;">Zo groeit Babbl mee met de behoeften van iedere gebruiker.</p>
+        <a href="voor-organisaties.html" class="btn btn-secondary" style="align-self:flex-start;">Meer over het platform</a>
+      </div>
+      <div class="platform-visual">
+        <div class="platform-orb-wrap">
+          <div class="platform-orb">
+            <span class="platform-orb-label">babbl.</span>
+          </div>
+        </div>
+        <div class="platform-chips">
+          <span class="platform-chip">🏥 Thuiszorg</span>
+          <span class="platform-chip">💊 Apotheek</span>
+          <span class="platform-chip">🏛️ Gemeente</span>
+          <span class="platform-chip">👨‍⚕️ Huisarts</span>
+          <span class="platform-chip">🤝 Welzijn</span>
+          <span class="platform-chip">👨‍👩‍👧 Familie</span>
+          <span class="platform-chip">🏢 Verzekering</span>
+          <span class="platform-chip">❤️ Mantelzorg</span>
+        </div>
+        <p style="font-size:.8125rem;color:var(--text-light);text-align:center;margin-top:8px;">Uitsluitend met toestemming van gebruiker of familie</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── DETAIL CARDS ───────────────────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-head">
+      <h2>Alles over Babbl</h2>
+      <p>Ontdek hoe Babbl werkt voor ouderen, familie en organisaties.</p>
+    </div>
+    <div class="detail-cards-grid">
+      <a href="voor-ouderen.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/06-hero-for-elderly.png" alt="Voor ouderen" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Voor ouderen</span>
+          <h3>Zelfstandig wonen met vertrouwen</h3>
+          <p>Dagelijkse ondersteuning die aansluit bij uw tempo en behoeften. Zonder gedoe.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+      <a href="voor-familie.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/09-daughter-visits-mother.png" alt="Voor familie" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Voor familie</span>
+          <h3>Meer rust en betrokkenheid</h3>
+          <p>Blijf verbonden met uw ouder. Gemoedsrust ook op afstand.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+      <a href="privacy.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/12-babbl-closeup-privacy.png" alt="Privacy" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Privacy</span>
+          <h3>Persoonlijke gegevens blijven persoonlijk</h3>
+          <p>Privacy by design. Lokale verwerking. Controle bij de gebruiker.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+      <a href="hoe-het-werkt.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/04-how-it-works.png" alt="Hoe het werkt" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Hoe het werkt</span>
+          <h3>Een eenvoudige uitleg van Babbl</h3>
+          <p>Geen technische kennis nodig. Gewoon praten en geholpen worden.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+      <a href="onze-visie.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/14-grandparent-grandchildre-vision.png" alt="Onze visie" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Onze visie</span>
+          <h3>Waarom Babbl bestaat</h3>
+          <p>Technologie moet ondersteunen, niet vervangen. Het verhaal achter Babbl.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+      <a href="voor-organisaties.html" class="detail-card">
+        <div class="detail-card-image">
+          <img src="assets/17-care-professional-for-organisations.png" alt="Voor organisaties" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="detail-card-body">
+          <span class="tag detail-card-tag">Voor organisaties</span>
+          <h3>Ondersteuning dichter bij huis brengen</h3>
+          <p>Babbl als open platform voor zorgorganisaties, gemeenten en welzijnsdiensten.</p>
+          <span class="detail-card-link">Lees meer</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY DIFFERENT ──────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-content">
+        <span class="tag">Onderscheidend</span>
+        <h2 class="why-title" style="margin-top:16px;">Ontworpen voor mensen, niet voor technologie</h2>
+        <div class="why-list">
+          <div class="why-item"><div class="why-check">✓</div><span>Geen ingewikkelde schermen of apps</span></div>
+          <div class="why-item"><div class="why-check">✓</div><span>Geen technische kennis nodig</span></div>
+          <div class="why-item"><div class="why-check">✓</div><span>Familie blijft betrokken en op de hoogte</span></div>
+          <div class="why-item"><div class="why-check">✓</div><span>Respect voor privacy, lokale verwerking</span></div>
+          <div class="why-item"><div class="why-check">✓</div><span>Ondersteunt zelfstandigheid</span></div>
+          <div class="why-item"><div class="why-check">✓</div><span>Groeit mee met persoonlijke behoeften</span></div>
+        </div>
+      </div>
+      <div class="why-image img-block">
+        <img src="assets/03-why-different.png" alt="Grootouder met kleinkind" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WAITLIST ───────────────────────────────────────── -->
+<section class="section bg-white" id="wachtlijst">
+  <div class="container">
+    <div class="waitlist">
+      <span class="tag">Wachtlijst</span>
+      <h2 class="waitlist-title" style="margin-top:16px;">Help mee Babbl vorm te geven</h2>
+      <p class="waitlist-text">We bouwen Babbl samen met ouderen, families, mantelzorgers en organisaties. Schrijf je in voor de wachtlijst.</p>
+      <div class="waitlist-benefits">
+        <span class="waitlist-benefit">Updates ontvangen</span>
+        <span class="waitlist-benefit">Prototypes volgen</span>
+        <span class="waitlist-benefit">Meedenken over functies</span>
+        <span class="waitlist-benefit">Als eerste toegang</span>
+      </div>
+      <form class="waitlist-form" id="waitlistForm" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">Voornaam</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Uw voornaam" required/>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="uw@email.nl" required/>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Ik wil op de wachtlijst</button>
+        <p class="form-note">Geen spam. U kunt zich altijd afmelden.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div style="font-size:2rem;margin-bottom:16px;">✓</div>
+        <h3>Welkom op de wachtlijst!</h3>
+        <p>We nemen contact op zodra Babbl beschikbaar komt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─────────────────────────────────────────────── -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-inner">
+      <h2 class="faq-title">Veelgestelde vragen</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is Babbl al beschikbaar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Nog niet. We ontwikkelen momenteel de eerste versie van Babbl. Schrijf u in voor de wachtlijst om als eerste op de hoogte te zijn.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is Babbl alleen voor ouderen?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Babbl wordt ontwikkeld voor ouderen én hun familie. Familieleden kunnen via Babbl betrokken blijven en ondersteuning bieden op afstand.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Heb ik technische kennis nodig?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Nee. Babbl is ontworpen zodat iedereen het kan gebruiken zonder enige technische kennis. Gewoon praten is voldoende.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Kan familie betrokken blijven?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Ja. Babbl is ontworpen met familiebetrokkenheid als uitgangspunt. Familie kan op een veilige, privacyvriendelijke manier betrokken blijven.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Hoe zit het met privacy?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Privacy staat centraal in het ontwerp van Babbl. Persoonlijke informatie wordt zo veel mogelijk lokaal verwerkt en opgeslagen. Gevoelige gegevens komen niet standaard in een centrale cloudomgeving terecht. <a href="privacy.html" style="color:var(--primary);">Lees meer over privacy.</a></p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Kost Babbl geld?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>Details over de prijs volgen later. Onze inzet is om Babbl toegankelijk te maken voor iedereen die het nodig heeft.</p></div>
+        </div>
+      </div>
+      <div class="faq-cta">
+        <a href="privacy.html" class="btn btn-secondary">Lees meer over privacy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">babbl<span>.</span></div>
+        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig, verbonden en met vertrouwen thuis te wonen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
+          <li><a href="voor-ouderen.html">Voor ouderen</a></li>
+          <li><a href="voor-familie.html">Voor familie</a></li>
+          <li><a href="onze-visie.html">Onze visie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Organisaties</h4>
+        <ul>
+          <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+          <li><a href="voor-organisaties.html#aanmelden">Aanmelden</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="#faq">Veelgestelde vragen</a></li>
+          <li><a href="#wachtlijst">Wachtlijst</a></li>
+          <li><a href="mailto:hallo@babbl.nl">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Babbl. Alle rechten voorbehouden.</p>
+      <p><a href="privacy.html">Privacybeleid</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navMobile').classList.toggle('open');
+}
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('waitlistForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Onze visie – Babbl</title>
+  <meta name="description" content="Technologie moet ondersteunen, niet vervangen. Het verhaal achter Babbl."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">babbl<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
+      <li><a href="voor-ouderen.html">Voor ouderen</a></li>
+      <li><a href="voor-familie.html">Voor familie</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+      <li><a href="index.html#faq">Veelgestelde vragen</a></li>
+    </ul>
+    <a href="index.html#wachtlijst" class="nav-cta">Kom op de wachtlijst</a>
+    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="hoe-het-werkt.html">Hoe het werkt</a>
+    <a href="voor-ouderen.html">Voor ouderen</a>
+    <a href="voor-familie.html">Voor familie</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="voor-organisaties.html">Voor organisaties</a>
+    <a href="index.html#faq">Veelgestelde vragen</a>
+    <a href="index.html#wachtlijst" class="nav-cta btn btn-primary">Kom op de wachtlijst</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="page-hero-content">
+        <span class="tag">Onze visie</span>
+        <h1 class="page-hero-title">Technologie moet ondersteunen, niet vervangen</h1>
+        <p class="page-hero-sub">Babbl bestaat omdat we geloven dat technologie in dienst moet staan van mensen — niet andersom. Het verhaal achter Babbl.</p>
+        <a href="index.html#wachtlijst" class="btn btn-primary btn-lg" style="margin-top:8px;">Kom op de wachtlijst</a>
+      </div>
+      <div class="page-hero-image">
+        <img src="assets/14-grandparent-grandchildre-vision.png" alt="Grootouder met kleinkinderen" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM WE SEE -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+      <span class="tag">De wereld verandert</span>
+      <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);margin:16px 0 24px;">We zien drie dingen tegelijk gebeuren</h2>
+
+      <div style="display:flex;flex-direction:column;gap:32px;margin-top:8px;">
+        <div style="display:flex;gap:28px;align-items:flex-start;">
+          <div style="width:56px;height:56px;flex-shrink:0;background:var(--bg-card);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:var(--shadow);">👴</div>
+          <div>
+            <h3 style="font-size:1.125rem;margin-bottom:10px;">Nederland vergrijst snel</h3>
+            <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Het aantal mensen boven de 65 groeit elk jaar. Steeds meer mensen wonen alleen en willen zo lang mogelijk zelfstandig thuis blijven. Dat is een wens die we moeten respecteren en ondersteunen.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:28px;align-items:flex-start;">
+          <div style="width:56px;height:56px;flex-shrink:0;background:var(--bg-card);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:var(--shadow);">🏥</div>
+          <div>
+            <h3 style="font-size:1.125rem;margin-bottom:10px;">De druk op zorg neemt toe</h3>
+            <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Zorgorganisaties staan onder druk. Mantelzorgers raken overbelast. Families wonen verder weg. De vraag naar ondersteuning groeit sneller dan het aanbod.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:28px;align-items:flex-start;">
+          <div style="width:56px;height:56px;flex-shrink:0;background:var(--bg-card);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:var(--shadow);">😔</div>
+          <div>
+            <h3 style="font-size:1.125rem;margin-bottom:10px;">Eenzaamheid groeit</h3>
+            <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Eenzaamheid onder ouderen is een van de grootste volksgezondheidsproblemen van onze tijd. Sociale verbinding is geen luxe — het is een basisbehoefte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY TECHNOLOGY -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="content-2col">
+      <div>
+        <span class="tag">Waarom technologie?</span>
+        <h2 class="content-title" style="margin-top:16px;">Niet de oplossing, wel een middel</h2>
+        <p class="content-text">Technologie lost eenzaamheid niet op. Technologie vervangt geen familie, geen mantelzorger, geen professional. Dat is ook nooit de bedoeling geweest.</p>
+        <p class="content-text">Maar technologie kan wel helpen de kloof te verkleinen. Tussen wat mensen nodig hebben en wat beschikbaar is. Tussen ouders en kinderen die ver van elkaar wonen. Tussen een vraag en een antwoord.</p>
+        <p class="content-text">Babbl probeert die kloof een klein beetje kleiner te maken. Op een menselijke manier.</p>
+      </div>
+      <div class="content-image">
+        <img src="assets/15-family-together-vision.png" alt="Familie samen thuis" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION STATEMENT -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;text-align:center;">
+      <span class="tag">Onze missie</span>
+      <div style="background:var(--bg-card);border-radius:var(--radius-lg);padding:64px 48px;margin-top:24px;box-shadow:var(--shadow-md);">
+        <div style="font-size:3rem;color:var(--primary);margin-bottom:24px;font-family:'Playfair Display',serif;">"</div>
+        <p style="font-family:'Playfair Display',serif;font-size:clamp(1.375rem,2.5vw,1.875rem);line-height:1.5;color:var(--text);margin-bottom:32px;">
+          Babbl helpt ouderen langer zelfstandig, verbonden en met vertrouwen thuis te wonen.
+        </p>
+        <div class="divider" style="margin:0 auto 32px;"></div>
+        <p style="font-size:1rem;color:var(--text-muted);line-height:1.7;max-width:560px;margin:0 auto;">
+          Zelfstandig, verbonden en met vertrouwen. Dat zijn de drie woorden die alles samenvatten. Niet technologie centraal, maar mensen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE BUILD -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="content-2col reverse">
+      <div>
+        <span class="tag">Hoe we bouwen</span>
+        <h2 class="content-title" style="margin-top:16px;">Samen met de mensen die het gebruiken</h2>
+        <p class="content-text">We bouwen Babbl niet in een lab en hopen dan dat mensen het willen gebruiken. We bouwen het samen met de mensen voor wie het bedoeld is.</p>
+        <p class="content-text">Ouderen, families, mantelzorgers, zorgprofessionals — zij denken mee over wat Babbl moet kunnen, hoe het moet voelen en wat het beslist niet moet doen.</p>
+        <ul class="content-list">
+          <li>Gebruikers denken mee vanaf het begin</li>
+          <li>Prototypes worden getest in echte woonsituaties</li>
+          <li>Feedback van zorgprofessionals is onderdeel van het ontwerp</li>
+          <li>Privacy en veiligheid worden nooit opgeofferd voor gemak</li>
+        </ul>
+      </div>
+      <div class="content-image">
+        <img src="assets/16-conversation-about-babbl-vision.png" alt="Gesprek over Babbl" style="width:100%;height:100%;object-fit:cover;display:block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Onze waarden</span>
+      <h2 style="margin-top:16px;">Waar we voor staan</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto;">
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">🤲</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Menselijkheid boven technologie</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">De ervaring voor de gebruiker is altijd het uitgangspunt. Nooit de technologie.</p>
+      </div>
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">🏡</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Zelfstandigheid respecteren</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">We ondersteunen, we nemen niet over. Iedere gebruiker blijft de baas over zijn eigen leven.</p>
+      </div>
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">🔒</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Privacy als fundament</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Vertrouwen verdien je door daden, niet door woorden. Privacy is ingebakken in elk onderdeel van Babbl.</p>
+      </div>
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">🌱</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Groeien met de gebruiker</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Iedere situatie is anders. Babbl past zich aan, groeit mee en is flexibel naar behoefte.</p>
+      </div>
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">🤝</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Samenwerken aan oplossingen</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Zorg is een samenspel. Babbl brengt mensen, families en organisaties dichter bij elkaar.</p>
+      </div>
+      <div style="background:var(--bg-card);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);">
+        <div style="font-size:1.75rem;margin-bottom:16px;">✨</div>
+        <h3 style="font-size:1.0625rem;margin-bottom:10px;">Eenvoud als kracht</h3>
+        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Iets eenvoudig maken is moeilijker dan iets ingewikkeld maken. Wij kiezen altijd voor eenvoud.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="container">
+  <div class="cta-section">
+    <span class="tag">Doe mee</span>
+    <h2 style="margin-top:16px;">Help mee Babbl vorm te geven</h2>
+    <p>We bouwen Babbl samen. Schrijf u in voor de wachtlijst en word onderdeel van de community die Babbl mede vormgeeft.</p>
+    <div class="btn-group">
+      <a href="index.html#wachtlijst" class="btn btn-primary btn-lg">Kom op de wachtlijst</a>
+      <a href="voor-organisaties.html" class="btn btn-secondary btn-lg">Voor organisaties</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">babbl<span>.</span></div>
+        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig, verbonden en met vertrouwen thuis te wonen.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="hoe-het-werkt.html">Hoe het werkt</a></li><li><a href="voor-ouderen.html">Voor ouderen</a></li><li><a href="voor-familie.html">Voor familie</a></li><li><a href="onze-visie.html">Onze visie</a></li></ul></div>
+      <div class="footer-col"><h4>Organisaties</h4><ul><li><a href="voor-organisaties.html">Voor organisaties</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="index.html#faq">Veelgestelde vragen</a></li><li><a href="index.html#wachtlijst">Wachtlijst</a></li><li><a href="mailto:hallo@babbl.nl">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Babbl. Alle rechten voorbehouden.</p>
+      <p><a href="privacy.html">Privacybeleid</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() { document.getElementById('navMobile').classList.toggle('open'); }
+</script>
+</body>
+</html>
