@@ -586,7 +586,9 @@
         <span class="waitlist-benefit">Meedenken over functies</span>
         <span class="waitlist-benefit">Als eerste toegang</span>
       </div>
-      <form class="waitlist-form" id="waitlistForm" onsubmit="submitForm(event)">
+      <form class="waitlist-form" id="waitlistForm" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitForm(event)">
+        <input type="hidden" name="form-name" value="waitlist"/>
+        <p hidden><label>Niet invullen: <input name="bot-field"/></label></p>
         <div class="form-row">
           <div class="form-field">
             <label for="firstName">Voornaam</label>
@@ -597,6 +599,14 @@
             <input type="email" id="email" name="email" placeholder="uw@email.nl" required/>
           </div>
         </div>
+        <div class="form-field" style="margin-bottom:8px;">
+          <label for="message">Iets dat u wilt delen? <span style="font-weight:normal;opacity:.7;">(optioneel)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="Bijvoorbeeld: voor wie zoekt u Babbl, of waar loopt u tegenaan?"></textarea>
+        </div>
+        <label class="form-consent" for="consent" style="display:flex;gap:10px;align-items:flex-start;text-align:left;margin:4px 0 16px;font-size:.9rem;line-height:1.4;">
+          <input type="checkbox" id="consent" name="consent" required style="margin-top:3px;flex-shrink:0;"/>
+          <span>Ik ga ermee akkoord dat Babbl mijn naam en e-mailadres gebruikt om contact op te nemen over de wachtlijst. Zie ons <a href="privacy.html">privacybeleid</a>.</span>
+        </label>
         <button type="submit" class="btn btn-primary btn-lg btn-full">Ik wil op de wachtlijst</button>
         <p class="form-note">Geen spam. U kunt zich altijd afmelden.</p>
       </form>
@@ -695,7 +705,7 @@
           <li><a href="privacy.html">Privacy</a></li>
           <li><a href="#faq">Veelgestelde vragen</a></li>
           <li><a href="#wachtlijst">Wachtlijst</a></li>
-          <li><a href="mailto:hallo@babbl.nl">Contact</a></li>
+          <li><a href="mailto:hallo@babbl.family">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -716,10 +726,54 @@ function toggleFaq(btn) {
   document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
   if (!isOpen) item.classList.add('open');
 }
-function submitForm(e) {
-  e.preventDefault();
+// ── Waitlist signup capture (Netlify Forms) ─────────────
+// Signups are captured automatically by Netlify once this site is
+// deployed there — no API key or endpoint to configure. View and
+// export them under Netlify dashboard → your site → Forms → "waitlist".
+// Note: capture only works on the deployed Netlify site, not when
+// opening this file locally (a local submit just shows the thank-you).
+
+function showWaitlistSuccess() {
   document.getElementById('waitlistForm').style.display = 'none';
   document.getElementById('formSuccess').classList.add('show');
+}
+
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+}
+
+async function submitForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('waitlistForm');
+  const btn = form.querySelector('button[type="submit"]');
+  const payload = {
+    'form-name': 'waitlist',
+    firstName: document.getElementById('firstName').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+    consent: document.getElementById('consent').checked ? 'ja' : 'nee',
+  };
+
+  btn.disabled = true;
+  btn.textContent = 'Even geduld…';
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(payload),
+    });
+    if (!res.ok) throw new Error('Signup failed: ' + res.status);
+    showWaitlistSuccess();
+  } catch (err) {
+    // On the local file:// preview there is no server to POST to, so we
+    // still show the thank-you. On the live Netlify site this path only
+    // runs for genuine errors.
+    console.warn('Babbl: signup POST did not reach a server ' +
+      '(expected when previewing locally). Error:', err);
+    showWaitlistSuccess();
+  }
 }
 </script>
 </body>

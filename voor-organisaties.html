@@ -225,7 +225,9 @@
         <span class="tag">Meld uw organisatie aan</span>
         <h2 class="waitlist-title" style="margin-top:16px;text-align:left;">Wij willen meedenken</h2>
         <p class="waitlist-text" style="text-align:left;">Babbl is nog in ontwikkeling. We gaan graag in gesprek met organisaties die willen meedenken over hoe ondersteuning dichter bij huis gebracht kan worden.</p>
-        <form class="waitlist-form" id="orgForm" onsubmit="submitOrgForm(event)">
+        <form class="waitlist-form" id="orgForm" name="organisaties" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitOrgForm(event)">
+          <input type="hidden" name="form-name" value="organisaties"/>
+          <p hidden><label>Niet invullen: <input name="bot-field"/></label></p>
           <div class="form-row">
             <div class="form-field">
               <label for="orgName">Naam organisatie</label>
@@ -243,9 +245,17 @@
             </div>
             <div class="form-field">
               <label for="contactEmail">E-mailadres</label>
-              <input type="email" id="contactEmail" name="contactEmail" placeholder="uw@organisatie.nl" required/>
+              <input type="email" id="contactEmail" name="email" placeholder="uw@organisatie.nl" required/>
             </div>
           </div>
+          <div class="form-field" style="margin-bottom:8px;">
+            <label for="orgMessage">Waar wilt u over meedenken? <span style="font-weight:normal;opacity:.7;">(optioneel)</span></label>
+            <textarea id="orgMessage" name="message" rows="3" placeholder="Bijvoorbeeld: uw rol, uw doelgroep, of waar u samenwerking ziet."></textarea>
+          </div>
+          <label class="form-consent" for="orgConsent" style="display:flex;gap:10px;align-items:flex-start;text-align:left;margin:4px 0 16px;font-size:.9rem;line-height:1.4;">
+            <input type="checkbox" id="orgConsent" name="consent" required style="margin-top:3px;flex-shrink:0;"/>
+            <span>Ik ga ermee akkoord dat Babbl deze gegevens gebruikt om contact op te nemen over samenwerking. Zie ons <a href="privacy.html">privacybeleid</a>.</span>
+          </label>
           <button type="submit" class="btn btn-primary btn-lg btn-full">Meld uw organisatie aan</button>
           <p class="form-note">We nemen zo snel mogelijk contact met u op.</p>
         </form>
@@ -268,7 +278,7 @@
       </div>
       <div class="footer-col"><h4>Product</h4><ul><li><a href="hoe-het-werkt.html">Hoe het werkt</a></li><li><a href="voor-ouderen.html">Voor ouderen</a></li><li><a href="voor-familie.html">Voor familie</a></li><li><a href="onze-visie.html">Onze visie</a></li></ul></div>
       <div class="footer-col"><h4>Organisaties</h4><ul><li><a href="voor-organisaties.html">Voor organisaties</a></li><li><a href="#aanmelden">Aanmelden</a></li></ul></div>
-      <div class="footer-col"><h4>Info</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="index.html#faq">Veelgestelde vragen</a></li><li><a href="index.html#wachtlijst">Wachtlijst</a></li><li><a href="mailto:hallo@babbl.nl">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="index.html#faq">Veelgestelde vragen</a></li><li><a href="index.html#wachtlijst">Wachtlijst</a></li><li><a href="mailto:hallo@babbl.family">Contact</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 Babbl. Alle rechten voorbehouden.</p>
@@ -279,10 +289,48 @@
 
 <script>
 function toggleNav() { document.getElementById('navMobile').classList.toggle('open'); }
-function submitOrgForm(e) {
+// ── Organisation signup capture (Netlify Forms) ─────────
+// Captured automatically by Netlify on the deployed site under
+// Forms → "organisaties". Requires form detection to be enabled in
+// the Netlify dashboard + a redeploy. Local previews just show the
+// thank-you without saving.
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+}
+
+async function submitOrgForm(e) {
   e.preventDefault();
-  document.getElementById('orgForm').style.display = 'none';
-  document.getElementById('orgFormSuccess').classList.add('show');
+  const form = document.getElementById('orgForm');
+  const btn = form.querySelector('button[type="submit"]');
+  const payload = {
+    'form-name': 'organisaties',
+    orgName: document.getElementById('orgName').value,
+    orgType: document.getElementById('orgType').value,
+    contactName: document.getElementById('contactName').value,
+    email: document.getElementById('contactEmail').value,
+    message: document.getElementById('orgMessage').value,
+    consent: document.getElementById('orgConsent').checked ? 'ja' : 'nee',
+  };
+
+  btn.disabled = true;
+  btn.textContent = 'Even geduld…';
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(payload),
+    });
+    if (!res.ok) throw new Error('Signup failed: ' + res.status);
+    document.getElementById('orgForm').style.display = 'none';
+    document.getElementById('orgFormSuccess').classList.add('show');
+  } catch (err) {
+    console.warn('Babbl: org signup POST did not reach a server ' +
+      '(expected when previewing locally). Error:', err);
+    document.getElementById('orgForm').style.display = 'none';
+    document.getElementById('orgFormSuccess').classList.add('show');
+  }
 }
 </script>
 </body>
