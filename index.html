@@ -13,42 +13,6 @@
 </head>
 <body>
 
-<!-- Device drawing reused by the production-design section -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <linearGradient id="devShade" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#000" stop-opacity=".28"/>
-      <stop offset=".35" stop-color="#fff" stop-opacity=".10"/>
-      <stop offset=".6" stop-color="#000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000" stop-opacity=".32"/>
-    </linearGradient>
-    <pattern id="devWeave" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="4" fill="none"/>
-      <path d="M0 1h4M0 3h4" stroke="#000" stroke-opacity=".07" stroke-width=".6"/>
-      <path d="M1 0v4M3 0v4" stroke="#fff" stroke-opacity=".08" stroke-width=".6"/>
-    </pattern>
-    <radialGradient id="devGlow" cx=".5" cy=".5" r=".5">
-      <stop offset=".6" stop-color="#FFE9C7" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#FFE9C7" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="devBlur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
-    <symbol id="babbl-device" viewBox="0 0 220 180">
-      <ellipse cx="114" cy="146" rx="98" ry="24" fill="#1C1208" opacity=".22" filter="url(#devBlur)"/>
-      <!-- fabric sleeve -->
-      <path d="M14 58 V128 A96 28 0 0 0 206 128 V58 Z" fill="currentColor"/>
-      <path d="M14 58 V128 A96 28 0 0 0 206 128 V58 Z" fill="url(#devWeave)"/>
-      <path d="M14 58 V128 A96 28 0 0 0 206 128 V58 Z" fill="url(#devShade)"/>
-      <!-- top plate, flush -->
-      <ellipse cx="110" cy="58" rx="96" ry="28" fill="#F5F1EA"/>
-      <ellipse cx="110" cy="58" rx="96" ry="28" fill="none" stroke="#1C1208" stroke-opacity=".10"/>
-      <!-- light ring + button -->
-      <ellipse cx="110" cy="58" rx="46" ry="13.5" fill="url(#devGlow)" opacity=".8"/>
-      <ellipse cx="110" cy="58" rx="38" ry="11" fill="none" stroke="#F2BE7C" stroke-width="3.5"/>
-      <ellipse cx="110" cy="58" rx="32" ry="9.2" fill="#FBF8F3" stroke="#1C1208" stroke-opacity=".10"/>
-    </symbol>
-  </defs>
-</svg>
-
 <!-- ─── NAVBAR ─────────────────────────────────────────── -->
 <nav class="nav">
   <div class="nav-inner">
@@ -96,7 +60,7 @@
         </div>
       </div>
       <div class="hero-image img-block">
-        <img src="assets/08-elderly-man-drinking-coffee.png" alt="Een ouder echtpaar drinkt samen koffie in de eigen woonkamer" width="1536" height="1024">
+        <img src="assets/08-elderly-man-drinking-coffee.webp" alt="Een ouder echtpaar drinkt samen koffie in de eigen woonkamer" width="1536" height="1024">
       </div>
     </div>
   </div>
@@ -406,13 +370,9 @@
         </ul>
       </div>
       <figure class="design-visual">
-        <div class="devices">
-          <div class="dev"><svg class="device" style="color:#DCD5C7" role="img" aria-label="Babbl in ivoor"><use href="#babbl-device"/></svg><span>Ivoor</span></div>
-          <div class="dev"><svg class="device" style="color:#A3AE95" role="img" aria-label="Babbl in saliegroen"><use href="#babbl-device"/></svg><span>Salie</span></div>
-          <div class="dev"><svg class="device" style="color:#C07A5C" role="img" aria-label="Babbl in terracotta"><use href="#babbl-device"/></svg><span>Terracotta</span></div>
-          <div class="dev"><svg class="device" style="color:#8A9BAD" role="img" aria-label="Babbl in rustig blauw"><use href="#babbl-device"/></svg><span>Rustig blauw</span></div>
-        </div>
-        <figcaption>Ontwerprichting, geen eindproduct. Vorm en kleuren kunnen nog veranderen.</figcaption>
+        <img src="assets/babbl-kleuren-ontwerprichting.webp" width="1536" height="1024" loading="lazy"
+             alt="Vier Babbls op een salontafel in een lichte woonkamer: rond en laag, met stoffen bekleding in saliegroen, terracotta, ivoor en blauw, en een oplichtende ring rond de knop op de bovenkant.">
+        <figcaption>Ontwerprichting (render), geen eindproduct. Vorm en kleuren kunnen nog veranderen.</figcaption>
       </figure>
     </div>
   </div>
@@ -423,7 +383,7 @@
   <div class="container">
     <div class="content-2col">
       <div class="content-image">
-        <img src="assets/09-daughter-visits-mother.png" alt="Een dochter komt op bezoek en omhelst haar moeder in de deuropening" width="1536" height="1024" loading="lazy">
+        <img src="assets/09-daughter-visits-mother.webp" alt="Een dochter komt op bezoek en omhelst haar moeder in de deuropening" width="1536" height="1024" loading="lazy">
       </div>
       <div>
         <span class="tag">Uw vertrouwde kring</span>

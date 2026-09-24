@@ -827,15 +827,11 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
 .design-points { display: flex; flex-direction: column; gap: 10px; }
 .design-points li { display: flex; gap: 10px; font-size: .9375rem; color: var(--text-muted); line-height: 1.6; }
 .design-points li::before { content: ''; width: 6px; height: 6px; margin-top: 10px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
-.design-visual {
-  background: linear-gradient(180deg, #EFE8DC 0%, #E4D9C8 100%);
-  border-radius: var(--radius-lg);
-  padding: 48px 32px 28px;
+.design-visual img {
+  width: 100%; height: auto;
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
 }
-.devices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 40px; max-width: 520px; margin: 0 auto; }
-.device { width: 100%; height: auto; aspect-ratio: 220 / 180; display: block; }
-.dev span { display: block; text-align: center; font-size: .75rem; color: var(--text-muted); margin-top: 10px; }
-.design-visual figcaption { font-size: .8125rem; color: var(--text-muted); text-align: center; margin-top: 24px; font-style: italic; }
+.design-visual figcaption { font-size: .8125rem; color: var(--text-muted); text-align: center; margin-top: 16px; font-style: italic; }
 
 /* ─── Vertrouwde kring ───────────────────────────────── */
 .content-image img { width: 100%; height: 100%; object-fit: cover; }
@@ -952,8 +948,6 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .proto-photo img { border-radius: var(--radius); }
 
   .more-grid { grid-template-columns: 1fr; gap: 28px; }
-  .design-visual { padding: 32px 16px 20px; }
-  .devices { gap: 20px 16px; }
 
   .route { grid-template-columns: 1fr; gap: 20px; justify-items: center; }
   .route-ask { max-width: 360px; }
