@@ -1,6 +1,6 @@
 # Babbl homepage — analysis & proposal (pre-implementation)
 
-Status: homepage implemented 2026-09-24 (index.html). Subpages not yet updated. Covers steps 1–9 of the brief.
+Status: homepage and subpages implemented 2026-09-24. Covers steps 1–9 of the brief.
 
 > ⚠️ Correction (2026-09-24): the local repo is **behind the live site** (babbl.family, Netlify). Live differs in: Netlify Forms waitlist (POST + honeypot + optional message + consent checkbox — sign-ups *are* captured), `hallo@babbl.family`, pretty URLs (`/hoe-het-werkt`), stats ("75-plussers woont zelfstandig thuis", "5,5 mln"), medication use case rewritten to "Wat staat er op dit doosje?", and voor-organisaties has a dorpsauto/vervoer card + "Van hulpvraag naar hulp" section. Proposal below still applies; findings about the form and email are superseded. Implementation must start from the live version.
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Voor organisaties – Babbl</title>
-  <meta name="description" content="Babbl als open platform voor zorgorganisaties, gemeenten en welzijnsdiensten. Breng ondersteuning dichter bij huis."/>
+  <meta name="description" content="Voor welzijnsorganisaties, gemeenten, ouderenbonden en buurtinitiatieven: maak de weg naar uw hulp korter, via een gesprek met Babbl."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,256 +13,165 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">babbl<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
-      <li><a href="voor-ouderen.html">Voor ouderen</a></li>
-      <li><a href="voor-familie.html">Voor familie</a></li>
+      <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
+      <li><a href="index.html#prototype">Het prototype</a></li>
       <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="voor-organisaties.html" style="color:var(--text);font-weight:500;">Voor organisaties</a></li>
-      <li><a href="index.html#faq">Veelgestelde vragen</a></li>
+      <li><a href="index.html#meedoen">Meedoen</a></li>
+      <li><a href="voor-organisaties.html" aria-current="page">Voor organisaties</a></li>
+      <li><a href="index.html#over-ons">Over ons</a></li>
     </ul>
-    <a href="index.html#wachtlijst" class="nav-cta">Kom op de wachtlijst</a>
-    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html#meedoen" class="nav-cta">Volg onze ontwikkeling</a>
+    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="hoe-het-werkt.html">Hoe het werkt</a>
-    <a href="voor-ouderen.html">Voor ouderen</a>
-    <a href="voor-familie.html">Voor familie</a>
+    <a href="index.html#zelf-samen">Wat Babbl doet</a>
+    <a href="index.html#prototype">Het prototype</a>
     <a href="privacy.html">Privacy</a>
-    <a href="voor-organisaties.html">Voor organisaties</a>
-    <a href="index.html#faq">Veelgestelde vragen</a>
-    <a href="index.html#wachtlijst" class="nav-cta btn btn-primary">Kom op de wachtlijst</a>
+    <a href="index.html#meedoen">Meedoen</a>
+    <a href="voor-organisaties.html" aria-current="page">Voor organisaties</a>
+    <a href="index.html#over-ons">Over ons</a>
+    <a href="index.html#meedoen" class="nav-cta btn btn-primary">Volg onze ontwikkeling</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="page-hero">
   <div class="container">
     <div class="page-hero-inner">
       <div class="page-hero-content">
         <span class="tag">Voor organisaties</span>
-        <h1 class="page-hero-title">Breng ondersteuning dichter bij huis</h1>
-        <p class="page-hero-sub">Babbl wordt een open platform waarop vertrouwde organisaties hun eigen ondersteuning kunnen aanbieden aan mensen die thuis wonen. Altijd met toestemming van de gebruiker.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+        <h1 class="page-hero-title">Maak de weg naar uw hulp korter.</h1>
+        <p class="page-hero-sub">De dorpsauto, het buurtteam, de boodschappendienst, de activiteitenmiddag: er is veel. Maar wie het nodig heeft, vindt de weg er niet altijd naartoe. Babbl kan die weg korter maken — gewoon via een gesprek.</p>
+        <div class="hero-actions">
           <a href="#aanmelden" class="btn btn-primary btn-lg">Wij willen meedenken</a>
-          <a href="#platform" class="btn btn-secondary btn-lg">Meer over het platform</a>
+          <a href="#hoe" class="btn btn-secondary btn-lg">Hoe het werkt</a>
         </div>
       </div>
-      <div class="page-hero-image">
-        <img src="assets/17-care-professional-for-organisations.png" alt="Zorgprofessional met Babbl" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <div class="page-hero-visual">
+        <div class="route route-compact">
+          <p class="say say-user route-ask">“Ik moet dinsdag naar de tandarts, maar ik heb geen vervoer.”</p>
+          <div class="route-hub" aria-hidden="true"><span>babbl<b>.</b></span></div>
+          <ul class="route-ways">
+            <li><strong>Anne</strong><span>Haar dochter, als zij kan</span></li>
+            <li><strong>Een buurtvrijwilliger</strong><span>Via de welzijnsorganisatie</span></li>
+            <li><strong>De dorpsauto</strong><span>Een lokale vervoersdienst</span></li>
+          </ul>
+        </div>
+        <p class="org-now"><span class="soon">Straks</span> Een voorbeeld van waar Babbl naartoe groeit.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INTRO -->
-<section class="section">
-  <div class="container">
-    <div style="max-width:760px;margin:0 auto;">
-      <span class="tag">Maatschappelijke waarde</span>
-      <h2 style="font-size:clamp(1.75rem,3vw,2.5rem);margin:16px 0 24px;">Zorg en ondersteuning werken beter samen</h2>
-      <p style="font-size:1.0625rem;color:var(--text-muted);line-height:1.8;margin-bottom:20px;">De uitdagingen rondom vergrijzing, zelfstandig wonen en mantelzorg zijn groot. Geen enkele organisatie kan die uitdagingen alleen oplossen. Babbl is niet gebouwd als concurrentie voor bestaande organisaties — maar als een schakel die het mogelijk maakt beter samen te werken rondom de mensen die thuis wonen.</p>
-      <p style="font-size:1.0625rem;color:var(--text-muted);line-height:1.8;">Het platform maakt het mogelijk dat organisaties die mensen al vertrouwen — de huisarts, de apotheek, de thuiszorg, de gemeente — via Babbl aanwezig kunnen zijn in het dagelijks leven van de gebruiker. Op een respectvolle, toestemmingsgebaseerde manier.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHO IS IT FOR -->
-<section class="section bg-white" id="platform">
-  <div class="container">
-    <div class="section-head">
-      <span class="tag">Voor wie</span>
-      <h2 style="margin-top:16px;">Welke organisaties kunnen aansluiten?</h2>
-      <p>Babbl is ontworpen voor organisaties die mensen thuis ondersteunen of willen ondersteunen.</p>
-    </div>
-    <div class="org-features">
-      <div class="org-feature">
-        <div class="org-feature-icon">🏥</div>
-        <h3>Thuiszorg en verpleging</h3>
-        <p>Aanvullende ondersteuning bieden buiten contactmomenten om. Zorg die doorloopt.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">👨‍⚕️</div>
-        <h3>Huisartsenpraktijken</h3>
-        <p>Patiënten helpen herinneren aan afspraken en instructies van de praktijk tussen consulten door.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">💊</div>
-        <h3>Apotheken</h3>
-        <p>Uitleg bij medicijnen en bijsluiters, voorgelezen en herhaald — rechtstreeks bij de patiënt thuis.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">🏛️</div>
-        <h3>Gemeenten</h3>
-        <p>Lokale informatie, WMO-ondersteuning en diensten toegankelijk maken voor inwoners.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">🤝</div>
-        <h3>Welzijnsorganisaties</h3>
-        <p>Activiteiten, dagbesteding en sociale verbinding dichterbij brengen.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">🛡️</div>
-        <h3>Zorgverzekeraars</h3>
-        <p>Preventieve ondersteuning en begeleiding die ziekenhuisopnames kan voorkomen.</p>
-      </div>
-      <div class="org-feature">
-        <div class="org-feature-icon">🚗</div>
-        <h3>Vervoersinitiatieven</h3>
-        <p>Een rit met de dorpsauto aanvragen of bevestigen, gewoon door het te vragen — geen belletje of formulier nodig.</p>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:32px;">
-      <p style="font-size:.9375rem;color:var(--text-muted);">Ook patiëntenverenigingen, ouderenbonden, dorpsinitiatieven zoals de dorpsauto, woningcorporaties en andere partijen die thuiswonenden ondersteunen zijn welkom.</p>
-    </div>
-  </div>
-</section>
-
-<!-- NEED-TO-HELP MATCHING -->
 <section class="section bg-white">
   <div class="container">
     <div class="section-head">
-      <span class="tag">Nieuw</span>
-      <h2 style="margin-top:16px;">Van hulpvraag naar hulp — automatisch verbonden</h2>
-      <p>Babbl herkent een hulpvraag in een gewoon gesprek en verbindt die met wie kan helpen — familie of een lokale organisatie. Zo wordt "iemand had misschien vervoer nodig" een rit die daadwerkelijk geregeld wordt.</p>
+      <span class="tag">Voor wie</span>
+      <h2 style="margin-top:16px;">Organisaties rond zelfstandig wonen</h2>
+      <p>Babbl is er voor de sociale basis in de buurt: ondersteuning die vrij toegankelijk is en mensen helpt mee te blijven doen.</p>
     </div>
-    <div style="max-width:640px;margin:0 auto;background:var(--bg-card);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);">
-      <div style="display:flex;flex-direction:column;gap:0;">
-        <div style="display:flex;gap:16px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">1</div>
-            <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
-          </div>
-          <div style="padding-bottom:20px;">
-            <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Meneer vraagt aan Babbl</div>
-            <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Kun je regelen dat ik donderdag naar de dokter kom? Ik kan zelf niet rijden."</div>
-          </div>
-        </div>
-        <div style="display:flex;gap:16px;">
-          <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--bg-muted);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--text-muted);flex-shrink:0;">2</div>
-            <div style="width:2px;flex:1;background:var(--border);margin:4px 0;min-height:24px;"></div>
-          </div>
-          <div style="padding-bottom:20px;">
-            <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Babbl herkent de hulpvraag</div>
-            <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"Zal ik uw dochter vragen, of zal ik de dorpsauto voor u boeken?"</div>
-          </div>
-        </div>
-        <div style="display:flex;gap:16px;">
-          <div style="display:flex;flex-direction:column;align-items:center;">
-            <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;flex-shrink:0;">3</div>
-          </div>
-          <div>
-            <div style="font-size:.8125rem;font-weight:500;color:var(--text);margin-bottom:4px;">Bevestiging</div>
-            <div style="font-size:.875rem;color:var(--text-muted);background:var(--bg);border-radius:10px;padding:10px 14px;font-style:italic;">"De dorpsauto haalt u donderdag om 10 uur op. U krijgt er morgen een herinnering van."</div>
-          </div>
-        </div>
+    <div class="org-features">
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🤝</div>
+        <h3>Welzijnsorganisaties en buurtteams</h3>
+        <p>Activiteiten, ontmoeting en hulp in de buurt vindbaar maken — voor wie niet elke week de wijkkrant leest.</p>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🏛️</div>
+        <h3>Gemeenten</h3>
+        <p>De sociale basis en mantelzorgondersteuning dichter bij inwoners brengen, in gewone taal.</p>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">👥</div>
+        <h3>Ouderenbonden en verenigingen</h3>
+        <p>Leden bereiken met nieuws en activiteiten, en hen helpen met de dingen waar ze vaak vragen over hebben.</p>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🚗</div>
+        <h3>Vervoersinitiatieven</h3>
+        <p>Een rit met de dorpsauto aanvragen door het gewoon te vragen, zonder belletje of formulier.</p>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🧺</div>
+        <h3>Buurt- en dorpsinitiatieven</h3>
+        <p>Boodschappendiensten, maaltijden, klusjes: de vrijwilligers die er al zijn, makkelijker vindbaar.</p>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🏘️</div>
+        <h3>Woningcorporaties</h3>
+        <p>Bewoners die langer zelfstandig willen wonen, helpen met de dingen van alledag.</p>
       </div>
     </div>
-    <p style="text-align:center;max-width:640px;margin:32px auto 0;font-size:.9375rem;color:var(--text-muted);">Babbl kiest hier nooit zelf en wordt nooit betaald om de ene aanbieder boven de andere te tonen — de gebruiker beslist altijd, en ziet altijd wie het aanbod doet.</p>
   </div>
 </section>
 
-<!-- HOW IT WORKS FOR ORGS -->
-<section class="section">
+<section class="section" id="hoe">
   <div class="container">
-    <div class="content-2col">
-      <div>
-        <span class="tag">Hoe het werkt</span>
-        <h2 class="content-title" style="margin-top:16px;">Aansluiten op het Babbl-platform</h2>
-        <p class="content-text">Babbl is een open platform. Organisaties kunnen in de toekomst hun eigen ondersteuning toevoegen via een beveiligde koppeling. Gebruikers bepalen zelf welke organisaties zij toegang geven.</p>
-        <p class="content-text">Het principe is eenvoudig: u levert de expertise en de inhoud, Babbl zorgt voor de toegang tot de gebruiker — op een veilige, vertrouwde en privacyvriendelijke manier. Eenmaal geverifieerd bereikt u de gebruiker rechtstreeks via het gesprek, zonder dat er ergens een portal of inlog bij komt kijken.</p>
+    <div class="section-head">
+      <span class="soon">Straks</span>
+      <h2 style="margin-top:16px;">Twee manieren om aan te sluiten</h2>
+      <p>Dit is hoe we het ontwerpen. Er zijn nog geen organisaties aangesloten; we zoeken partners om het samen uit te werken.</p>
+    </div>
+    <div class="join-ways">
+      <div class="join-way">
+        <h3>Berichten en aanbod</h3>
+        <p>Mensen kiezen zelf welke organisaties ze willen volgen. U kunt hen dan een bericht sturen — “De koffieochtend is verplaatst naar donderdag” — of een aanbod doen, zoals een rit. Babbl vertelt het wanneer de gebruiker er klaar voor is.</p>
         <ul class="content-list">
-          <li>Gebruiker geeft expliciete toestemming per organisatie</li>
-          <li>Organisatie bepaalt welke ondersteuning zij aanbiedt</li>
-          <li>Organisatie bereikt de gebruiker rechtstreeks via Babbl — een herinnering, aankondiging of verzoek, zonder dat de gebruiker ergens hoeft in te loggen</li>
-          <li>Organisaties zien alleen wat de gebruiker met hen deelt — nooit gesprekken</li>
-          <li>Gebruiker kan toegang altijd intrekken</li>
+          <li>Alleen geverifieerde organisaties</li>
+          <li>Alleen bij mensen die daar zelf voor kozen</li>
+          <li>U ziet alleen wat de gebruiker met u deelt — nooit gesprekken</li>
         </ul>
       </div>
-      <div class="content-image">
-        <div class="img-placeholder" style="height:100%;background:linear-gradient(145deg,#D8E4F0,#A0B8D4);">
-          <!-- Platform diagram -->
-          <div style="position:relative;z-index:1;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:32px;">
-            <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
-              <!-- Central Babbl -->
-              <rect x="110" y="100" width="100" height="70" rx="14" fill="#D4B99A"/>
-              <defs>
-                <linearGradient id="fg4" x1="110" y1="100" x2="210" y2="170" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#E0C9B0"/><stop offset="100%" stop-color="#B8966E"/>
-                </linearGradient>
-              </defs>
-              <rect x="112" y="102" width="96" height="66" rx="12" fill="url(#fg4)"/>
-              <rect x="110" y="100" width="100" height="70" rx="14" stroke="#F0C070" stroke-width="2" fill="none" opacity=".6"/>
-              <text x="160" y="168" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#8B6340" font-weight="600">babbl.</text>
-              <!-- Org nodes -->
-              <circle cx="50" cy="50" r="28" fill="#E8F0D8" stroke="#A0C080" stroke-width="1.5"/>
-              <text x="50" y="45" text-anchor="middle" font-size="14">🏥</text>
-              <text x="50" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#4A6A30">Thuiszorg</text>
-              <circle cx="160" cy="28" r="28" fill="#E8F0D8" stroke="#A0C080" stroke-width="1.5"/>
-              <text x="160" y="23" text-anchor="middle" font-size="14">👨‍⚕️</text>
-              <text x="160" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#4A6A30">Huisarts</text>
-              <circle cx="270" cy="50" r="28" fill="#E8F0D8" stroke="#A0C080" stroke-width="1.5"/>
-              <text x="270" y="45" text-anchor="middle" font-size="14">💊</text>
-              <text x="270" y="62" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#4A6A30">Apotheek</text>
-              <circle cx="50" cy="230" r="28" fill="#E8F0D8" stroke="#A0C080" stroke-width="1.5"/>
-              <text x="50" y="225" text-anchor="middle" font-size="14">🏛️</text>
-              <text x="50" y="242" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#4A6A30">Gemeente</text>
-              <circle cx="270" cy="230" r="28" fill="#E8F0D8" stroke="#A0C080" stroke-width="1.5"/>
-              <text x="270" y="225" text-anchor="middle" font-size="14">🤝</text>
-              <text x="270" y="242" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#4A6A30">Welzijn</text>
-              <!-- Connecting lines -->
-              <line x1="76" y1="68" x2="120" y2="108" stroke="#A0C080" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <line x1="160" y1="56" x2="160" y2="100" stroke="#A0C080" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <line x1="244" y1="68" x2="200" y2="108" stroke="#A0C080" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <line x1="76" y1="214" x2="120" y2="175" stroke="#A0C080" stroke-width="1.5" stroke-dasharray="4 3"/>
-              <line x1="244" y1="214" x2="200" y2="175" stroke="#A0C080" stroke-width="1.5" stroke-dasharray="4 3"/>
-            </svg>
-          </div>
-          <span class="img-placeholder-label">Diagram: open platform</span>
-        </div>
+      <div class="join-way">
+        <h3>Meehelpen in een huishouden</h3>
+        <p>Helpt uw organisatie iemand regelmatig, dan kan die persoon uw medewerkers in de eigen kring opnemen. Bijvoorbeeld om een afspraak te zien of een vraag om hulp op te pakken.</p>
+        <ul class="content-list">
+          <li>Alleen als de gebruiker dat wil</li>
+          <li>Iedere medewerker komt erbij bij de gebruiker thuis, hardop, en staat er met naam</li>
+          <li>De gebruiker kan één medewerker of de hele organisatie altijd weer verwijderen</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRINCIPLES FOR ORGS -->
 <section class="section bg-white">
   <div class="container">
     <div class="section-head">
       <span class="tag">Uitgangspunten</span>
       <h2 style="margin-top:16px;">Hoe wij samenwerken</h2>
-      <p>De samenwerking met organisaties is gebaseerd op een aantal duidelijke uitgangspunten.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto;">
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">✋</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Toestemming altijd voorop</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Organisaties krijgen alleen toegang als de gebruiker of diens familie daarvoor expliciet toestemming geeft.</p>
+    <div class="principles principles-3">
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">✋</div>
+        <h3>De gebruiker beslist</h3>
+        <p>Organisaties krijgen alleen iets te zien of te zeggen als de gebruiker daar zelf toestemming voor geeft, per organisatie.</p>
       </div>
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">🎯</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Relevante ondersteuning</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Organisaties bieden alleen ondersteuning die aansluit bij de werkelijke behoeften van de gebruiker.</p>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">⚖️</div>
+        <h3>Geen betaalde voorrang</h3>
+        <p>Niemand kan betalen om vaker of eerder door Babbl genoemd te worden. Babbl stelt voor wat past; de gebruiker kiest.</p>
       </div>
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">🔒</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Privacy als standaard</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Alle integraties voldoen aan de strenge privacynormen van het Babbl-platform. Geen compromissen.</p>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🪪</div>
+        <h3>Geverifieerd</h3>
+        <p>Alleen organisaties waarvan we weten wie ze zijn, kunnen mensen via Babbl bereiken.</p>
       </div>
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">🌱</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Maatschappelijke focus</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Samenwerkingen zijn gericht op maatschappelijke waarde voor de gebruiker, niet op commerciële doeleinden.</p>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🔒</div>
+        <h3>Nooit gesprekken</h3>
+        <p>Een organisatie ziet wat de gebruiker deelt, nooit wat iemand tegen Babbl zegt.</p>
       </div>
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">🤝</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Vertrouwen verdienen</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">Organisaties die aansluiten op Babbl worden door gebruikers vertrouwd. Dat vertrouwen moeten we samen verdienen.</p>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🌱</div>
+        <h3>Welzijn, geen zorg</h3>
+        <p>Babbl helpt met de dingen van alledag. Het stelt geen diagnoses en geeft geen medisch advies.</p>
       </div>
-      <div style="background:var(--bg);border-radius:var(--radius);padding:32px;">
-        <div style="font-size:1.5rem;margin-bottom:16px;">⚙️</div>
-        <h3 style="font-size:1rem;margin-bottom:10px;">Technisch partnership</h3>
-        <p style="font-size:.875rem;color:var(--text-muted);line-height:1.6;">We werken samen aan integraties die passen bij uw processen en systemen, met ondersteuning van het Babbl-team.</p>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🛠️</div>
+        <h3>Samen bouwen</h3>
+        <p>We werken de koppelingen uit met de organisaties die ze gaan gebruiken, zodat ze passen bij hoe u nu al werkt.</p>
       </div>
     </div>
   </div>
@@ -275,7 +184,7 @@
       <div class="waitlist" style="text-align:left;">
         <span class="tag">Meld uw organisatie aan</span>
         <h2 class="waitlist-title" style="margin-top:16px;text-align:left;">Wij willen meedenken</h2>
-        <p class="waitlist-text" style="text-align:left;">Babbl is nog in ontwikkeling. We gaan graag in gesprek met organisaties die willen meedenken over hoe ondersteuning dichter bij huis gebracht kan worden.</p>
+        <p class="waitlist-text" style="text-align:left;">Babbl is nog in ontwikkeling en er zijn nog geen koppelingen met organisaties. We zoeken organisaties die willen meedenken en straks mee willen testen.</p>
         <form class="waitlist-form" id="orgForm" name="organisaties" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitOrgForm(event)">
           <input type="hidden" name="form-name" value="organisaties"/>
           <p hidden><label>Niet invullen: <input name="bot-field"/></label></p>
@@ -286,7 +195,7 @@
             </div>
             <div class="form-field">
               <label for="orgType">Type organisatie</label>
-              <input type="text" id="orgType" name="orgType" placeholder="Thuiszorg, gemeente, apotheek…"/>
+              <input type="text" id="orgType" name="orgType" placeholder="Welzijnsorganisatie, gemeente, buurtinitiatief…"/>
             </div>
           </div>
           <div class="form-row">
@@ -325,14 +234,38 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">babbl<span>.</span></div>
-        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig, verbonden en met vertrouwen thuis te wonen.</p>
+        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig te blijven. Zelf. Samen. Met wat hulp.</p>
       </div>
-      <div class="footer-col"><h4>Product</h4><ul><li><a href="hoe-het-werkt.html">Hoe het werkt</a></li><li><a href="voor-ouderen.html">Voor ouderen</a></li><li><a href="voor-familie.html">Voor familie</a></li><li><a href="onze-visie.html">Onze visie</a></li></ul></div>
-      <div class="footer-col"><h4>Organisaties</h4><ul><li><a href="voor-organisaties.html">Voor organisaties</a></li><li><a href="#aanmelden">Aanmelden</a></li></ul></div>
-      <div class="footer-col"><h4>Info</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="index.html#faq">Veelgestelde vragen</a></li><li><a href="index.html#wachtlijst">Wachtlijst</a></li><li><a href="mailto:hallo@babbl.family">Contact</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Babbl</h4>
+        <ul>
+          <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
+          <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
+          <li><a href="index.html#prototype">Het prototype</a></li>
+          <li><a href="onze-visie.html">Onze visie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Voor wie</h4>
+        <ul>
+          <li><a href="voor-ouderen.html">Voor ouderen</a></li>
+          <li><a href="voor-familie.html">Voor familie</a></li>
+          <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+          <li><a href="voor-organisaties.html#aanmelden">Aanmelden als organisatie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="index.html#faq">Veelgestelde vragen</a></li>
+          <li><a href="index.html#meedoen">Meedoen</a></li>
+          <li><a href="mailto:hallo@babbl.family">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Babbl. Alle rechten voorbehouden.</p>
+      <p>© 2026 Babbl. Alle rechten voorbehouden.</p>
       <p><a href="privacy.html">Privacybeleid</a></p>
     </div>
   </div>

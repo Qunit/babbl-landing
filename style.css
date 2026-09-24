@@ -1032,3 +1032,72 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .nav-hamburger { display: block; }
 }
 .nav-mobile a.nav-cta { color: #fff; border-bottom: none; }
+
+/* ═══ SUBPAGES 2026 ════════════════════════════════════ */
+.nav-links a[aria-current="page"] { color: var(--text); font-weight: 500; }
+.nav-mobile a[aria-current="page"] { color: var(--text); font-weight: 500; }
+.page-hero-image img { width: 100%; height: 100%; object-fit: cover; }
+.principles-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* voor-ouderen: a day */
+.day { list-style: none; display: flex; flex-direction: column; gap: 18px; margin-top: 8px; }
+.day li { display: flex; gap: 16px; align-items: flex-start; }
+.day-time {
+  flex-shrink: 0; width: 56px; padding: 6px 0; border-radius: 10px;
+  background: var(--bg-muted); text-align: center;
+  font-size: .8125rem; font-weight: 600; color: var(--text-muted);
+}
+.day strong { display: block; font-size: .9375rem; margin-bottom: 2px; }
+.day li span:not(.day-time) { font-size: .9375rem; color: var(--text-muted); line-height: 1.6; }
+
+/* voor-familie: what the family sees in the app */
+.fam-cases { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; }
+.fam-case {
+  background: var(--bg-card); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 24px; display: flex; flex-direction: column; gap: 14px;
+}
+.fam-kind { font-size: .75rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--text-light); }
+.fam-case .say-user { margin-right: 24px; }
+.app-note {
+  background: var(--text); color: #fff; border-radius: 14px;
+  padding: 12px 16px; margin-left: 24px;
+  font-size: .875rem; line-height: 1.5;
+}
+.app-note-from { display: block; font-size: .72rem; color: rgba(255,255,255,.55); margin-bottom: 3px; }
+.app-note-actions { display: block; margin-top: 8px; font-size: .8125rem; color: #F4C98E; }
+
+.seen { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; margin: 0 auto; }
+.seen-col { background: var(--bg); border-radius: var(--radius); padding: 28px; }
+.seen-col h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.no-list { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
+.no-list li { display: flex; gap: 12px; font-size: .9375rem; color: var(--text-muted); line-height: 1.6; }
+.no-list li::before { content: '✕'; color: var(--text-light); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+/* voor-organisaties */
+.page-hero-visual { display: flex; flex-direction: column; gap: 16px; }
+.route-compact {
+  grid-template-columns: 1fr; justify-items: center; gap: 22px;
+  background: var(--bg-card); border-radius: var(--radius-lg);
+  padding: 32px; box-shadow: var(--shadow-md);
+}
+.route-compact .route-ask { max-width: 380px; }
+.route-compact .route-hub::before { content: '↓'; left: 50%; top: -22px; transform: translateX(-50%); }
+.route-compact .route-hub::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -22px; transform: translateX(-50%); }
+.route-compact .route-ways { width: 100%; max-width: 380px; }
+.org-now { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: .8125rem; color: var(--text-light); }
+.join-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1000px; margin: 0 auto; }
+.join-way { background: var(--bg-card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 32px; }
+.join-way h3 { font-size: 1.375rem; margin-bottom: 12px; }
+.join-way > p { font-size: .9375rem; color: var(--text-muted); line-height: 1.7; }
+
+@media (max-width: 1024px) {
+  .principles-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .principles-3, .fam-cases, .seen, .join-ways { grid-template-columns: 1fr; }
+  .page-hero { padding: 40px 0 56px; }
+  .page-hero-image { order: 0 !important; }
+  .route-compact { padding: 24px 16px; }
+  .fam-case .say-user { margin-right: 0; }
+  .app-note { margin-left: 0; }
+}
