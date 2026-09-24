@@ -1025,3 +1025,10 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .pv-flow, .pv-side { grid-template-columns: 1fr; gap: 28px; }
   .pv-step + .pv-step::before { content: '↓'; left: 50%; top: -24px; transform: translateX(-50%); }
 }
+
+/* Six menu items plus the CTA need ~1040px; below that, use the mobile menu */
+@media (max-width: 1100px) {
+  .nav-links, .nav-inner > .nav-cta { display: none; }
+  .nav-hamburger { display: block; }
+}
+.nav-mobile a.nav-cta { color: #fff; border-bottom: none; }
