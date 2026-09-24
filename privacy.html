@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Privacy – Babbl</title>
-  <meta name="description" content="Privacy staat centraal bij Babbl. Lokale verwerking, controle bij de gebruiker, transparant ontwerp."/>
+  <meta name="description" content="Hoe Babbl met uw gegevens omgaat: spraak verwerkt op eigen servers in de EU, sleutels blijven in uw apparaat, u bepaalt wat u deelt."/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -40,151 +40,131 @@
     <div class="page-hero-inner">
       <div class="page-hero-content">
         <span class="tag">Privacy</span>
-        <h1 class="page-hero-title">Persoonlijke gegevens blijven persoonlijk</h1>
-        <p class="page-hero-sub">Privacy is geen bijzaak bij Babbl. Het is een van de kernprincipes waarop het hele product is gebouwd. Uw gegevens zijn van u.</p>
-        <a href="index.html#wachtlijst" class="btn btn-primary btn-lg" style="margin-top:8px;">Kom op de wachtlijst</a>
+        <h1 class="page-hero-title">Uw gegevens, uw regie.</h1>
+        <p class="page-hero-sub">Babbl helpt u met persoonlijke dingen: brieven, afspraken, de mensen om u heen. Daarom vertellen we precies waar uw gegevens heen gaan en wat we ermee doen. Ook de delen die minder mooi klinken.</p>
+        <a href="#hoe-het-werkt" class="btn btn-primary btn-lg" style="margin-top:8px;">Zo werkt het</a>
       </div>
-      <div class="page-hero-image">
-        <img src="assets/12-babbl-closeup-privacy.png" alt="Babbl in woonkamer" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <div class="pv-promises">
+        <p class="pv-promise"><span><strong>Babbl luistert pas na “hoi babbl”.</strong></span></p>
+        <p class="pv-promise"><span><strong>Uw spraak wordt verwerkt op infrastructuur die wij zelf beheren, in de EU.</strong></span></p>
+        <p class="pv-promise"><span><strong>Geen derde partij verwerkt uw spraak als spraak.</strong></span></p>
+        <p class="pv-promise"><span><strong>Uw wachtwoorden en sleutels verlaten het apparaat nooit.</strong></span></p>
+        <p class="pv-promise"><span><strong>Wat Babbl over u onthoudt, is versleuteld met een sleutel die alleen in uw apparaat bestaat.</strong> Wij kunnen het niet lezen.</span></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HEADLINE STATEMENT -->
-<section class="section-sm bg-white">
-  <div class="container">
-    <div style="max-width:760px;margin:0 auto;text-align:center;padding:32px 0;">
-      <h2 style="font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.4;color:var(--text);">
-        Babbl verwerkt en bewaart persoonlijke informatie zo veel mogelijk <span style="color:var(--primary);">lokaal op het apparaat</span> — niet in een centrale cloudomgeving.
-      </h2>
-      <div class="divider" style="margin:24px auto;"></div>
-      <p style="font-size:1.0625rem;color:var(--text-muted);line-height:1.7;">
-        Dat is een bewuste keuze. Gevoelige informatie over uw dagelijks leven hoort niet thuis op servers van derden. Het hoort bij u, thuis.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- PRINCIPLES -->
-<section class="section">
+<!-- HOW DATA FLOWS -->
+<section class="section bg-white" id="hoe-het-werkt">
   <div class="container">
     <div class="section-head">
-      <span class="tag">Kernprincipes</span>
-      <h2 style="margin-top:16px;">Privacy by design</h2>
-      <p>Deze principes liggen ten grondslag aan elk onderdeel van Babbl.</p>
+      <span class="tag">Waar uw gegevens heen gaan</span>
+      <h2 style="margin-top:16px;">Van uw vraag naar een antwoord</h2>
+      <p>Een goed gesprek in het Nederlands vraagt meer rekenkracht dan in een klein apparaat past. Daarom gebeurt het luisteren en antwoorden op servers. Zo loopt dat, stap voor stap.</p>
     </div>
-    <div class="principles" style="max-width:900px;margin:0 auto;">
-      <div class="principle">
-        <div class="principle-icon">🏠</div>
-        <h3>Lokale verwerking</h3>
-        <p>Persoonlijke gegevens worden zo veel mogelijk verwerkt en opgeslagen op het Babbl-apparaat bij u thuis. Niet op externe servers.</p>
+
+    <ol class="pv-flow">
+      <li class="pv-step">
+        <span class="pv-where">Bij u thuis</span>
+        <h3>Babbl</h3>
+        <p>Babbl wacht op “hoi babbl”. Pas dan gaat uw vraag naar onze servers.</p>
+        <p class="pv-keeps">Blijft hier: uw sleutels en wachtwoorden, en de sleutel waarmee uw gegevens versleuteld zijn.</p>
+      </li>
+      <li class="pv-step pv-step-own">
+        <span class="pv-where">Servers van babbl, in de EU</span>
+        <h3>Luisteren en spreken</h3>
+        <p>Uw stem wordt omgezet in tekst op computers die wij zelf beheren, in Europese datacenters. Ook de stem waarmee Babbl antwoordt, wordt hier gemaakt.</p>
+        <p>Voordat er verder iets met de tekst gebeurt, vervangen we persoonlijke gegevens, zoals namen en nummers, door codes.</p>
+      </li>
+      <li class="pv-step">
+        <span class="pv-where">Europese aanbieder</span>
+        <h3>Het taalmodel</h3>
+        <p>Om te begrijpen wat u bedoelt en een antwoord te bedenken, gebruikt Babbl een taalmodel van een Europese aanbieder. Dat model krijgt alleen tekst met codes, nooit uw stem.</p>
+        <p class="pv-keeps">De codes worden weer vervangen door de echte namen in uw eigen apparaat.</p>
+      </li>
+    </ol>
+
+    <div class="pv-side">
+      <div>
+        <h3>Brieven lezen op uw telefoon</h3>
+        <p>Maakt u een foto van een brief, dan wordt die op uw eigen telefoon gelezen. Voor het lezen gaan de foto en de tekst nergens heen. Vraagt u Babbl daarna om uitleg, dan gelden dezelfde regels als voor uw spraak.</p>
       </div>
-      <div class="principle">
-        <div class="principle-icon">🎛️</div>
-        <h3>Controle bij de gebruiker</h3>
-        <p>U bepaalt wat Babbl onthoudt, wat er gedeeld wordt met familie en welke organisaties toegang krijgen tot uw informatie. Altijd u.</p>
+      <div>
+        <h3>Wat Babbl onthoudt</h3>
+        <p>Afspraken, uw boodschappenlijst en andere dingen die Babbl voor u bijhoudt, zijn van u. Ze zijn versleuteld met een sleutel die alleen in uw apparaat bestaat. Een reservekopie kunnen wij niet lezen.</p>
       </div>
-      <div class="principle">
-        <div class="principle-icon">🔍</div>
-        <h3>Transparantie</h3>
-        <p>U kunt altijd opvragen wat Babbl weet en wat er met die informatie gebeurt. Geen verborgen processen, geen onduidelijke dataverzameling.</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">✋</div>
-        <h3>Toestemming vooraf</h3>
-        <p>Organisaties zoals uw huisarts of apotheek krijgen alleen toegang als u daar expliciet toestemming voor geeft. Nooit automatisch.</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">🗑️</div>
-        <h3>Recht op verwijdering</h3>
-        <p>U kunt op ieder moment vragen om gegevens te verwijderen. Babbl bewaart alleen wat u wilt dat het bewaart.</p>
-      </div>
-      <div class="principle">
-        <div class="principle-icon">🔒</div>
-        <h3>Beveiliging als basis</h3>
-        <p>Alle communicatie is versleuteld. Toegang tot uw gegevens is strikt beperkt tot wat nodig is voor de ondersteuning die u vraagt.</p>
+      <div>
+        <h3>Gezondheid</h3>
+        <p>Babbl doet alleen iets met uw gezondheid — onthouden, bijhouden of doorgeven — als u daar apart toestemming voor geeft. Zegt u nee, dan werkt Babbl gewoon voor al het andere.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LOCAL VS CLOUD -->
-<section class="section bg-white">
+<!-- CIRCLE -->
+<section class="section">
   <div class="container">
     <div class="content-2col">
       <div>
-        <span class="tag">Lokaal vs. cloud</span>
-        <h2 class="content-title" style="margin-top:16px;">Wat blijft er lokaal?</h2>
-        <p class="content-text">Babbl is ontworpen om zo min mogelijk persoonlijke informatie buiten uw huis te sturen. Dat onderscheidt Babbl van veel andere digitale hulpmiddelen.</p>
-        <p class="content-text">Gegevens die lokaal blijven:</p>
+        <span class="tag">Uw vertrouwde kring</span>
+        <h2 class="content-title" style="margin-top:16px;">Wat ziet uw familie?</h2>
+        <p class="content-text">Alleen wat u met hen deelt. Babbl deelt nooit uit zichzelf iets met anderen, en houdt niemand in de gaten.</p>
         <ul class="content-list">
-          <li>Gesprekken en vragen die u aan Babbl stelt</li>
-          <li>Herinneringen en afspraken</li>
-          <li>Persoonlijke voorkeuren en gewoonten</li>
-          <li>Gezondheids- en medicatie-informatie</li>
-          <li>Familiecontacten en communicatiegeschiedenis</li>
+          <li>U bepaalt wie er in uw kring zit</li>
+          <li>U bepaalt wat zij mogen zien</li>
+          <li>Wat u deelt, gaat versleuteld van uw apparaat naar hun telefoon</li>
+          <li>U kunt toegang altijd weer intrekken</li>
         </ul>
-        <p class="content-text" style="margin-top:16px;">Alleen wanneer Babbl verbinding nodig heeft met een externe dienst — en u daar toestemming voor geeft — verlaat informatie het apparaat. En dan alleen wat strikt noodzakelijk is.</p>
+        <p class="content-text" style="margin-top:16px;">Organisaties krijgen alleen iets te zien als u daar per organisatie toestemming voor geeft.</p>
       </div>
       <div class="content-image">
-        <div class="img-placeholder" style="height:100%;background:linear-gradient(145deg,#E8E0F0,#C0B0D8);">
-          <!-- Visual diagram: device at center, arrows pointing inward -->
-          <div style="position:relative;z-index:1;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:40px;">
-            <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;">
-              <!-- Central device -->
-              <rect x="105" y="90" width="110" height="80" rx="16" fill="#D4B99A"/>
-              <defs>
-                <linearGradient id="fg3" x1="105" y1="90" x2="215" y2="170" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#E0C9B0"/><stop offset="100%" stop-color="#B8966E"/>
-                </linearGradient>
-              </defs>
-              <rect x="107" y="92" width="106" height="76" rx="14" fill="url(#fg3)"/>
-              <rect x="105" y="90" width="110" height="80" rx="16" stroke="#F0C070" stroke-width="2.5" fill="none" opacity=".6"/>
-              <text x="160" y="163" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#8B6340" font-weight="600">babbl.</text>
-              <!-- Shield overlay -->
-              <path d="M160 95 L178 103 L178 128 Q178 142 160 148 Q142 142 142 128 L142 103 Z" fill="#5A4A7A" opacity=".25"/>
-              <!-- Data stays local labels -->
-              <text x="40" y="55" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A4A7A">Gesprekken</text>
-              <text x="280" y="55" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A4A7A">Afspraken</text>
-              <text x="30" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A4A7A">Medicatie</text>
-              <text x="285" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#5A4A7A">Familie</text>
-              <!-- Arrows pointing to device -->
-              <path d="M60 60 L120 100" stroke="#5A4A7A" stroke-width="1.5" stroke-dasharray="4 3" opacity=".5" marker-end="url(#arr)"/>
-              <path d="M255 60 L200 100" stroke="#5A4A7A" stroke-width="1.5" stroke-dasharray="4 3" opacity=".5"/>
-              <path d="M55 210 L120 155" stroke="#5A4A7A" stroke-width="1.5" stroke-dasharray="4 3" opacity=".5"/>
-              <path d="M260 210 L200 155" stroke="#5A4A7A" stroke-width="1.5" stroke-dasharray="4 3" opacity=".5"/>
-              <!-- Lock icon -->
-              <text x="160" y="252" text-anchor="middle" font-size="20">🔒</text>
-              <text x="160" y="270" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#5A4A7A">Lokaal opgeslagen</text>
-            </svg>
-          </div>
-          <span class="img-placeholder-label">Diagram: lokale dataopslag</span>
-        </div>
+        <img src="assets/09-daughter-visits-mother.png" alt="Een dochter komt op bezoek bij haar moeder" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAMILY SHARING -->
+<!-- HONEST LIMITS -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Eerlijk over de grenzen</span>
+      <h2 style="margin-top:16px;">Wat Babbl niet is</h2>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">📶</div>
+        <h3>Zonder internet kan Babbl weinig</h3>
+        <p>Heeft Babbl geen verbinding, dan zegt hij dat hardop. Hij kan dan geen vragen beantwoorden en niets voor u regelen.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🚨</div>
+        <h3>Babbl is geen alarmsysteem</h3>
+        <p>Vertrouw bij een noodgeval niet op Babbl. Gebruik een alarmknop of bel 112. Zonder internet kan Babbl ook geen hulp inschakelen.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🩺</div>
+        <h3>Babbl is geen medisch hulpmiddel</h3>
+        <p>Babbl kan een brief of een doosje voorlezen en uitleggen wat er staat. Een diagnose of medisch advies geeft Babbl niet.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🛠️</div>
+        <h3>Nog in ontwikkeling</h3>
+        <p>Dit is hoe we Babbl bouwen. Voordat Babbl bij u thuis komt, laten we controleren dat het ook echt zo werkt — en pas dan beloven we meer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY WE CHANGED -->
 <section class="section">
   <div class="container">
-    <div class="content-2col reverse">
-      <div>
-        <span class="tag">Familie en derden</span>
-        <h2 class="content-title" style="margin-top:16px;">Wat wordt er gedeeld met familie?</h2>
-        <p class="content-text">Familie kan via Babbl betrokken blijven — maar alleen wat u zelf wilt delen. U heeft altijd de controle.</p>
-        <p class="content-text">Babbl deelt nooit automatisch informatie met anderen. Elke vorm van delen vraagt uw expliciete toestemming. U kunt op ieder moment aanpassen wat er gedeeld wordt en met wie.</p>
-        <ul class="content-list">
-          <li>U bepaalt welke familieleden toegang hebben</li>
-          <li>U bepaalt wat zij kunnen zien of horen</li>
-          <li>U kunt toegang altijd intrekken</li>
-          <li>Babbl bewaakt uw privacy, ook tegenover familie</li>
-        </ul>
-      </div>
-      <div class="content-image">
-        <img src="assets/13-close-up-privacy.png" alt="Close-up Babbl" style="width:100%;height:100%;object-fit:cover;display:block;">
-      </div>
+    <div class="pv-change">
+      <span class="tag">Waarom dit anders is dan eerst</span>
+      <h2>Eerder schreven we dat uw gegevens thuis bleven.</h2>
+      <p>Dat was ons plan, en we hebben het serieus geprobeerd. Maar een klein apparaat kon Nederlandse spraak niet snel en goed genoeg verstaan. Dat hebben we gemeten, niet aangenomen.</p>
+      <p>Daarom gebeurt het luisteren nu op servers die wij zelf beheren, in de EU. Geen andere partij krijgt uw stem te verwerken. Uw sleutels, uw wachtwoorden en de sleutel tot uw gegevens blijven in uw apparaat. We passen onze belofte liever aan dan dat we iets beloven wat niet klopt.</p>
     </div>
   </div>
 </section>
@@ -192,10 +172,10 @@
 <!-- GDPR NOTE -->
 <section class="section-sm bg-white">
   <div class="container">
-    <div style="max-width:760px;margin:0 auto;background:var(--bg);border-radius:var(--radius-lg);padding:48px;">
-      <h3 style="font-size:1.25rem;margin-bottom:16px;">AVG en Europese privacywetgeving</h3>
-      <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;margin-bottom:16px;">Babbl is ontworpen in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG) en overige Europese privacywetgeving. Uw rechten als gebruiker — inzage, correctie, verwijdering — zijn verankerd in het ontwerp van Babbl, niet slechts in de kleine lettertjes.</p>
-      <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Meer details over ons privacybeleid volgen bij de lancering. Heeft u nu al vragen? Neem contact met ons op via <a href="mailto:privacy@babbl.family" style="color:var(--primary);">privacy@babbl.family</a>.</p>
+    <div style="max-width:720px;margin:0 auto;">
+      <h3 style="font-size:1.25rem;margin-bottom:12px;">AVG en Europese privacywetgeving</h3>
+      <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;margin-bottom:12px;">Babbl valt onder de Algemene Verordening Gegevensbescherming (AVG). U heeft recht op inzage, correctie en verwijdering van uw gegevens. We laten ons ontwerp toetsen door privacy- en juridische specialisten voordat Babbl bij mensen thuis komt.</p>
+      <p style="font-size:.9375rem;color:var(--text-muted);line-height:1.7;">Het volledige privacybeleid volgt voordat Babbl in gebruik gaat. Heeft u nu al vragen? Mail ons via <a href="mailto:privacy@babbl.family" style="color:var(--primary);">privacy@babbl.family</a>.</p>
     </div>
   </div>
 </section>
@@ -203,12 +183,11 @@
 <!-- CTA -->
 <div class="container">
   <div class="cta-section">
-    <span class="tag">Wachtlijst</span>
-    <h2 style="margin-top:16px;">Privacy als onderscheidende eigenschap</h2>
-    <p>Schrijf u in voor de wachtlijst en ontvang updates over de ontwikkeling van Babbl.</p>
+    <h2>Vragen over privacy?</h2>
+    <p>We leggen het u graag uit, in gewone taal.</p>
     <div class="btn-group">
-      <a href="index.html#wachtlijst" class="btn btn-primary btn-lg">Kom op de wachtlijst</a>
-      <a href="hoe-het-werkt.html" class="btn btn-secondary btn-lg">Hoe het werkt</a>
+      <a href="mailto:privacy@babbl.family" class="btn btn-primary btn-lg">Mail ons</a>
+      <a href="index.html#meedoen" class="btn btn-secondary btn-lg">Volg onze ontwikkeling</a>
     </div>
   </div>
 </div>
