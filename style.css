@@ -884,6 +884,9 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
 .join-cards { margin-bottom: 48px; }
 .join-cards .org-feature h3 { font-size: 1.125rem; }
 .join-cards .org-feature p { font-size: .9375rem; }
+.join-cards .org-feature { display: flex; flex-direction: column; align-items: center; }
+.join-link { margin-top: auto; padding-top: 16px; font-size: .9375rem; font-weight: 500; color: var(--primary); }
+.join-link:hover { text-decoration: underline; }
 .waitlist { scroll-margin-top: 90px; }
 .waitlist-title { font-size: clamp(1.5rem, 3vw, 2rem) !important; }
 .form-field textarea, .form-field select {
