@@ -817,7 +817,7 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
 .progress li:not(.done):not(.now) strong { color: var(--text-muted); font-weight: 500; }
 
 /* ─── Wat Babbl nog meer kan ─────────────────────────── */
-.more-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.more-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 56px; max-width: 920px; margin: 0 auto; }
 .more-grid .solution-pillar h3 { font-size: 1.125rem; }
 
 /* ─── Ontworpen om thuis te horen ────────────────────── */
@@ -1010,7 +1010,7 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
 }
 
 .pv-side {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px;
   max-width: 1060px; margin: 56px auto 0;
 }
 .pv-side h3 { font-size: 1.125rem; margin-bottom: 8px; }
@@ -1130,3 +1130,4 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .safe-convo .say-user { margin-right: 0; }
   .safe-convo .say-babbl { margin-left: 0; }
 }
+.safe-copy > p + p { margin-top: 12px; }
