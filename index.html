@@ -113,12 +113,13 @@
 
     <!-- ─── 3 · SCENARIOS ─────────────────────────────── -->
     <div class="scen" id="scenarios">
-      <p class="scen-lead">Zo werkt dat bij vier gewone situaties.</p>
+      <p class="scen-lead">Zo werkt dat bij vijf gewone situaties.</p>
       <div class="scen-tabs" role="tablist" aria-label="Situaties">
         <button role="tab" id="tab-brief" aria-controls="scenario-brief" aria-selected="true">Brief</button>
         <button role="tab" id="tab-afspraak" aria-controls="scenario-afspraak" aria-selected="false" tabindex="-1">Afspraak</button>
         <button role="tab" id="tab-vervoer" aria-controls="scenario-vervoer" aria-selected="false" tabindex="-1">Vervoer</button>
         <button role="tab" id="tab-boodschappen" aria-controls="scenario-boodschappen" aria-selected="false" tabindex="-1">Boodschappen</button>
+        <button role="tab" id="tab-techniek" aria-controls="scenario-techniek" aria-selected="false" tabindex="-1">Techniek</button>
       </div>
 
       <!-- Brief -->
@@ -221,6 +222,32 @@
             <p class="say say-user">“Het lukt me deze week niet om zelf boodschappen te doen.”</p>
             <p class="say say-babbl">“Zal ik iemand uit uw kring vragen? Of kijken welke mogelijkheden er bij u in de buurt zijn?”</p>
             <p class="level-note">Straks kan Babbl ook helpen met een buurtinitiatief of een bezorgdienst. Altijd met u als uitgangspunt — nooit omdat een winkel ervoor betaalt.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Techniek -->
+      <div class="scen-panel" role="tabpanel" id="scenario-techniek" aria-labelledby="tab-techniek">
+        <h3 class="scen-name">Vastgelopen op een scherm</h3>
+        <p class="scen-intro">Een app die ineens iets anders doet, een melding die u niet begrijpt, een telefoon die vol zit. Soms zit u even vast.</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Zelf</span><span class="level-sub">U doet het zelf</span></div>
+            <p class="say say-user">“Mijn telefoon zegt dat de opslag vol is. Wat moet ik doen?”</p>
+            <p class="say say-babbl">“Dan staan er veel foto’s of filmpjes op. Zullen we samen kijken wat weg kan? Open eerst Instellingen — dat is het tandwieltje.”</p>
+            <p class="level-note">Babbl legt het stap voor stap uit, in uw tempo. U doet het zelf.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Samen</span><span class="level-sub">Met iemand die u vertrouwt</span></div>
+            <p class="say say-user">“Wil je Daan vragen of hij zaterdag even naar mijn telefoon kan kijken?”</p>
+            <p class="say say-babbl">“Ik vraag het Daan, en vertel erbij dat uw opslag vol is. Dan weet hij meteen waar het om gaat.”</p>
+            <p class="level-note">Wie helpt, weet meteen wat er speelt. Geen lang telefoontje vooraf.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Met wat hulp</span><span class="level-sub">Via een organisatie</span></div>
+            <p class="say say-user">“Het lukt me niet, en de kinderen hebben het zo druk.”</p>
+            <p class="say say-babbl">“Zullen we SeniorWeb inschakelen? Zij helpen met telefoon en computer, ook bij u thuis. Ik zoek het nummer voor u op en vertel wat u ze kunt vragen.”</p>
+            <p class="level-note">Hulp kan ook van een organisatie komen. Babbl noemt SeniorWeb omdat ze helpen, niet omdat iemand daarvoor betaalt.</p>
           </li>
         </ol>
       </div>
