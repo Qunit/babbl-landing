@@ -1101,3 +1101,32 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .fam-case .say-user { margin-right: 0; }
   .app-note { margin-left: 0; }
 }
+
+/* ─── Scams: "Is dit normaal? Is dit veilig?" ────────── */
+.safe-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.safe-copy h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); margin: 16px 0; }
+.safe-copy > p { color: var(--text-muted); line-height: 1.8; font-size: 1.0625rem; }
+.safe-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.safe-chips li {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 50px;
+  padding: 7px 14px; font-size: .875rem; color: var(--text);
+}
+.safe-note { font-size: .875rem !important; color: var(--text-light) !important; }
+.safe-convo {
+  background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+  padding: 28px; display: flex; flex-direction: column; gap: 12px;
+}
+.safe-convo .say-user { margin-right: 40px; }
+.safe-convo .say-babbl { margin-left: 40px; }
+.safe-convo-note { font-size: .8125rem; color: var(--text-light); text-align: center; margin-top: 4px; }
+.safe-built { margin-top: 64px; }
+.safe-built > h3 { text-align: center; font-size: 1.375rem; margin-bottom: 28px; }
+.safe-honest { text-align: center; max-width: 620px; margin: 28px auto 0; font-size: .9375rem; color: var(--text-muted); }
+@media (max-width: 900px) {
+  .safe-inner { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+  .safe-convo { padding: 20px 16px; }
+  .safe-convo .say-user { margin-right: 0; }
+  .safe-convo .say-babbl { margin-left: 0; }
+}
