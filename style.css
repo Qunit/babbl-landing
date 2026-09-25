@@ -1164,3 +1164,8 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   background: rgba(255,255,255,.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
   padding: 3px 10px; border-radius: 50px;
 }
+.say-step {
+  align-self: center; display: inline-flex; align-items: center; gap: 6px;
+  font-size: .75rem; color: var(--text-muted);
+  background: var(--bg-muted); border-radius: 50px; padding: 4px 12px;
+}
