@@ -1158,3 +1158,9 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   .hero-talk { position: relative; z-index: 1; left: auto; bottom: auto; width: auto; margin: -28px 12px 0; }
   .talk-steps { grid-template-columns: 1fr; gap: 16px; padding: 24px 0; }
 }
+.hero-img-label {
+  position: absolute; top: 14px; right: 14px;
+  font-size: .6875rem; letter-spacing: .03em; color: var(--text-muted);
+  background: rgba(255,255,255,.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  padding: 3px 10px; border-radius: 50px;
+}
