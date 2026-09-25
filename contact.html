@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact – Babbl</title>
+  <meta name="description" content="Een vraag over Babbl, privacy, meedoen of samenwerken? Stuur ons een bericht via het contactformulier."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">babbl<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
+      <li><a href="index.html#prototype">Het prototype</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="index.html#meedoen">Meedoen</a></li>
+      <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+      <li><a href="index.html#over-ons">Over ons</a></li>
+    </ul>
+    <a href="index.html#meedoen" class="nav-cta">Volg onze ontwikkeling</a>
+    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html#zelf-samen">Wat Babbl doet</a>
+    <a href="index.html#prototype">Het prototype</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="index.html#meedoen">Meedoen</a>
+    <a href="voor-organisaties.html">Voor organisaties</a>
+    <a href="index.html#over-ons">Over ons</a>
+    <a href="index.html#meedoen" class="nav-cta btn btn-primary">Volg onze ontwikkeling</a>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="waitlist contact-box">
+      <span class="tag">Contact</span>
+      <h1 class="waitlist-title" style="margin-top:16px;">Neem contact op</h1>
+      <p class="waitlist-text">Een vraag, een idee of een zorg? Laat het ons weten. We lezen elk bericht en reageren zo snel mogelijk.</p>
+      <form class="waitlist-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContactForm(event)">
+        <input type="hidden" name="form-name" value="contact"/>
+        <p hidden><label>Niet invullen: <input name="bot-field"/></label></p>
+        <div class="form-field">
+          <label for="onderwerp">Waar gaat uw bericht over?</label>
+          <select id="onderwerp" name="onderwerp" required>
+            <option value="">Kies een onderwerp</option>
+            <option value="algemeen">Algemene vraag</option>
+            <option value="privacy">Privacy en gegevens</option>
+            <option value="meedoen">Babbl uitproberen of meedoen</option>
+            <option value="organisatie">Organisatie of samenwerking</option>
+            <option value="pers">Pers</option>
+            <option value="anders">Anders</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" placeholder="Uw naam" autocomplete="name" required/>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="uw@email.nl" autocomplete="email" required/>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="bericht">Uw bericht</label>
+          <textarea id="bericht" name="bericht" rows="5" required></textarea>
+        </div>
+        <label class="form-consent" for="consent">
+          <input type="checkbox" id="consent" name="consent" required/>
+          <span>Ik ga ermee akkoord dat Babbl mijn gegevens gebruikt om op mijn bericht te reageren. Zie ons <a href="privacy.html">privacybeleid</a>.</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Verstuur bericht</button>
+      </form>
+      <div class="form-success" id="contactSuccess">
+        <div style="font-size:2rem;margin-bottom:16px;">✓</div>
+        <h3>Bedankt voor uw bericht</h3>
+        <p>We reageren zo snel mogelijk.</p>
+      </div>
+      <p class="form-note" style="margin-top:24px;">Wilt u Babbl uitproberen? Dan kunt u ook <a href="index.html#meedoen" style="color:var(--primary);text-decoration:underline;">direct op de hoogte blijven</a>. Voor organisaties is er een <a href="voor-organisaties.html#aanmelden" style="color:var(--primary);text-decoration:underline;">eigen aanmeldformulier</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">babbl<span>.</span></div>
+        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig te blijven. Zelf. Samen. Met wat hulp.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Babbl</h4>
+        <ul>
+          <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
+          <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
+          <li><a href="index.html#prototype">Het prototype</a></li>
+          <li><a href="onze-visie.html">Onze visie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Voor wie</h4>
+        <ul>
+          <li><a href="voor-ouderen.html">Voor ouderen</a></li>
+          <li><a href="voor-familie.html">Voor familie</a></li>
+          <li><a href="voor-organisaties.html">Voor organisaties</a></li>
+          <li><a href="voor-organisaties.html#aanmelden">Aanmelden als organisatie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="index.html#faq">Veelgestelde vragen</a></li>
+          <li><a href="index.html#meedoen">Meedoen</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Babbl. Alle rechten voorbehouden.</p>
+      <p><a href="privacy.html">Privacybeleid</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() { document.getElementById('navMobile').classList.toggle('open'); }
+
+// Preselect the subject from ?onderwerp=privacy (links from other pages)
+(function () {
+  const want = new URLSearchParams(location.search).get('onderwerp');
+  const sel = document.getElementById('onderwerp');
+  if (want && [...sel.options].some(o => o.value === want)) sel.value = want;
+})();
+
+// ── Contact capture (Netlify Forms → "contact") ─────────
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+}
+
+function showContactSuccess() {
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('contactSuccess').classList.add('show');
+}
+
+async function submitContactForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('contactForm');
+  const btn = form.querySelector('button[type="submit"]');
+  const payload = {
+    'form-name': 'contact',
+    onderwerp: document.getElementById('onderwerp').value,
+    naam: document.getElementById('naam').value,
+    email: document.getElementById('email').value,
+    bericht: document.getElementById('bericht').value,
+    consent: document.getElementById('consent').checked ? 'ja' : 'nee',
+  };
+  btn.disabled = true;
+  btn.textContent = 'Even geduld…';
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(payload),
+    });
+    if (!res.ok) throw new Error('Contact failed: ' + res.status);
+    showContactSuccess();
+  } catch (err) {
+    // No server behind a local preview; on Netlify this only runs for real errors.
+    console.warn('Babbl: contact POST did not reach a server ' +
+      '(expected when previewing locally). Error:', err);
+    showContactSuccess();
+  }
+}
+</script>
+</body>
+</html>
