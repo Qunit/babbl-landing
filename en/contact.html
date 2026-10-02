@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Contact – Babbl</title>
-  <meta name="description" content="Een vraag over Babbl, privacy, meedoen of samenwerken? Stuur ons een bericht via het contactformulier."/>
+  <meta name="description" content="A question about Babbl, privacy, getting involved or working together? Send us a message using the contact form."/>
   <link rel="alternate" hreflang="nl" href="https://babbl.family/contact"/>
   <link rel="alternate" hreflang="en" href="https://babbl.family/en/contact"/>
   <link rel="alternate" hreflang="x-default" href="https://babbl.family/contact"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
 
@@ -16,30 +16,30 @@
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">babbl<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
-      <li><a href="index.html#prototype">Het prototype</a></li>
+      <li><a href="index.html#zelf-samen">What Babbl does</a></li>
+      <li><a href="index.html#prototype">The prototype</a></li>
       <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="index.html#meedoen">Meedoen</a></li>
-      <li><a href="voor-organisaties.html">Voor organisaties</a></li>
-      <li><a href="index.html#over-ons">Over ons</a></li>
+      <li><a href="index.html#meedoen">Get involved</a></li>
+      <li><a href="for-organisations.html">For organisations</a></li>
+      <li><a href="index.html#over-ons">About us</a></li>
     </ul>
-    <a href="index.html#meedoen" class="nav-cta">Volg onze ontwikkeling</a>
+    <a href="index.html#meedoen" class="nav-cta">Follow our progress</a>
     <div class="lang-switch" aria-label="Taal / Language">
-      <a href="contact.html" lang="nl" hreflang="nl" aria-current="page">NL</a>
-      <a href="en/contact.html" lang="en" hreflang="en" title="English">EN</a>
+      <a href="../contact.html" lang="nl" hreflang="nl" title="Nederlands">NL</a>
+      <a href="contact.html" lang="en" hreflang="en" aria-current="page">EN</a>
     </div>
     <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="index.html#zelf-samen">Wat Babbl doet</a>
-    <a href="index.html#prototype">Het prototype</a>
+    <a href="index.html#zelf-samen">What Babbl does</a>
+    <a href="index.html#prototype">The prototype</a>
     <a href="privacy.html">Privacy</a>
-    <a href="index.html#meedoen">Meedoen</a>
-    <a href="voor-organisaties.html">Voor organisaties</a>
-    <a href="index.html#over-ons">Over ons</a>
-    <a href="index.html#meedoen" class="nav-cta btn btn-primary">Volg onze ontwikkeling</a>
+    <a href="index.html#meedoen">Get involved</a>
+    <a href="for-organisations.html">For organisations</a>
+    <a href="index.html#over-ons">About us</a>
+    <a href="index.html#meedoen" class="nav-cta btn btn-primary">Follow our progress</a>
   </div>
 </nav>
 
@@ -47,49 +47,49 @@
   <div class="container">
     <div class="waitlist contact-box">
       <span class="tag">Contact</span>
-      <h1 class="waitlist-title" style="margin-top:16px;">Neem contact op</h1>
-      <p class="waitlist-text">Een vraag, een idee of een zorg? Laat het ons weten. We lezen elk bericht en reageren zo snel mogelijk.</p>
+      <h1 class="waitlist-title" style="margin-top:16px;">Get in touch</h1>
+      <p class="waitlist-text">A question, an idea or a concern? Let us know. We read every message and reply as soon as we can.</p>
       <form class="waitlist-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContactForm(event)">
         <input type="hidden" name="form-name" value="contact"/>
-        <p hidden><label>Niet invullen: <input name="bot-field"/></label></p>
+        <p hidden><label>Do not fill this in: <input name="bot-field"/></label></p>
         <div class="form-field">
-          <label for="onderwerp">Waar gaat uw bericht over?</label>
+          <label for="onderwerp">What is your message about?</label>
           <select id="onderwerp" name="onderwerp" required>
-            <option value="">Kies een onderwerp</option>
-            <option value="algemeen">Algemene vraag</option>
-            <option value="privacy">Privacy en gegevens</option>
-            <option value="meedoen">Babbl uitproberen of meedoen</option>
-            <option value="organisatie">Organisatie of samenwerking</option>
-            <option value="pers">Pers</option>
-            <option value="anders">Anders</option>
+            <option value="">Choose a subject</option>
+            <option value="algemeen">General question</option>
+            <option value="privacy">Privacy and data</option>
+            <option value="meedoen">Trying Babbl or getting involved</option>
+            <option value="organisatie">Organisation or partnership</option>
+            <option value="pers">Press</option>
+            <option value="anders">Something else</option>
           </select>
         </div>
         <div class="form-row">
           <div class="form-field">
-            <label for="naam">Naam</label>
-            <input type="text" id="naam" name="naam" placeholder="Uw naam" autocomplete="name" required/>
+            <label for="naam">Name</label>
+            <input type="text" id="naam" name="naam" placeholder="Your name" autocomplete="name" required/>
           </div>
           <div class="form-field">
-            <label for="email">E-mailadres</label>
-            <input type="email" id="email" name="email" placeholder="uw@email.nl" autocomplete="email" required/>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required/>
           </div>
         </div>
         <div class="form-field">
-          <label for="bericht">Uw bericht</label>
+          <label for="bericht">Your message</label>
           <textarea id="bericht" name="bericht" rows="5" required></textarea>
         </div>
         <label class="form-consent" for="consent">
           <input type="checkbox" id="consent" name="consent" required/>
-          <span>Ik ga ermee akkoord dat Babbl mijn gegevens gebruikt om op mijn bericht te reageren. Zie ons <a href="privacy.html">privacybeleid</a>.</span>
+          <span>I agree that Babbl may use my details to reply to my message. See our <a href="privacy.html">privacy policy</a>.</span>
         </label>
-        <button type="submit" class="btn btn-primary btn-lg btn-full">Verstuur bericht</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Send message</button>
       </form>
       <div class="form-success" id="contactSuccess">
         <div style="font-size:2rem;margin-bottom:16px;">✓</div>
-        <h3>Bedankt voor uw bericht</h3>
-        <p>We reageren zo snel mogelijk.</p>
+        <h3>Thank you for your message</h3>
+        <p>We will reply as soon as we can.</p>
       </div>
-      <p class="form-note" style="margin-top:24px;">Wilt u Babbl uitproberen? Dan kunt u ook <a href="index.html#meedoen" style="color:var(--primary);text-decoration:underline;">direct op de hoogte blijven</a>. Voor organisaties is er een <a href="voor-organisaties.html#aanmelden" style="color:var(--primary);text-decoration:underline;">eigen aanmeldformulier</a>.</p>
+      <p class="form-note" style="margin-top:24px;">Would you like to try Babbl? You can also <a href="index.html#meedoen" style="color:var(--primary);text-decoration:underline;">keep up to date straight away</a>. Organisations have their <a href="for-organisations.html#aanmelden" style="color:var(--primary);text-decoration:underline;">own sign-up form</a>.</p>
     </div>
   </div>
 </section>
@@ -99,39 +99,39 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">babbl<span>.</span></div>
-        <p class="footer-mission">Babbl helpt ouderen langer zelfstandig te blijven. Zelf. Samen. Met wat hulp.</p>
+        <p class="footer-mission">Babbl helps older adults stay independent for longer. Yourself. Together. With a little help.</p>
       </div>
       <div class="footer-col">
         <h4>Babbl</h4>
         <ul>
-          <li><a href="index.html#zelf-samen">Wat Babbl doet</a></li>
-          <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
-          <li><a href="index.html#prototype">Het prototype</a></li>
-          <li><a href="onze-visie.html">Onze visie</a></li>
+          <li><a href="index.html#zelf-samen">What Babbl does</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="index.html#prototype">The prototype</a></li>
+          <li><a href="our-vision.html">Our vision</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Voor wie</h4>
+        <h4>Who it's for</h4>
         <ul>
-          <li><a href="voor-ouderen.html">Voor ouderen</a></li>
-          <li><a href="voor-familie.html">Voor familie</a></li>
-          <li><a href="voor-organisaties.html">Voor organisaties</a></li>
-          <li><a href="voor-organisaties.html#aanmelden">Aanmelden als organisatie</a></li>
+          <li><a href="for-older-adults.html">For older adults</a></li>
+          <li><a href="for-families.html">For families</a></li>
+          <li><a href="for-organisations.html">For organisations</a></li>
+          <li><a href="for-organisations.html#aanmelden">Sign up as an organisation</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Info</h4>
         <ul>
           <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="index.html#faq">Veelgestelde vragen</a></li>
-          <li><a href="index.html#meedoen">Meedoen</a></li>
+          <li><a href="index.html#faq">Frequently asked questions</a></li>
+          <li><a href="index.html#meedoen">Get involved</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Babbl. Alle rechten voorbehouden.</p>
-      <p><a href="privacy.html">Privacybeleid</a></p>
+      <p>© 2026 Babbl. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy policy</a></p>
     </div>
   </div>
 </footer>
@@ -171,7 +171,7 @@ async function submitContactForm(e) {
     consent: document.getElementById('consent').checked ? 'ja' : 'nee',
   };
   btn.disabled = true;
-  btn.textContent = 'Even geduld…';
+  btn.textContent = 'Just a moment…';
   try {
     const res = await fetch('/', {
       method: 'POST',

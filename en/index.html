@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Babbl – Independent for longer. With Babbl close by.</title>
+  <meta name="description" content="Babbl helps older adults stay independent for longer. A trusted assistant for everyday things — simply by talking about them. Yourself. Together. With a little help."/>
+  <meta property="og:title" content="Babbl – Independent for longer. With Babbl close by."/>
+  <meta property="og:description" content="A trusted assistant for everyday things. Yourself. Together. With a little help."/>
+  <meta property="og:image" content="../assets/prototypes-werktafel-2026-09.webp"/>
+  <link rel="alternate" hreflang="nl" href="https://babbl.family/"/>
+  <link rel="alternate" hreflang="en" href="https://babbl.family/en/"/>
+  <link rel="alternate" hreflang="x-default" href="https://babbl.family/"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">babbl<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#zelf-samen">What Babbl does</a></li>
+      <li><a href="#prototype">The prototype</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#meedoen">Get involved</a></li>
+      <li><a href="for-organisations.html">For organisations</a></li>
+      <li><a href="#over-ons">About us</a></li>
+    </ul>
+    <a href="#meedoen" class="nav-cta">Follow our progress</a>
+    <div class="lang-switch" aria-label="Taal / Language">
+      <a href="../index.html" lang="nl" hreflang="nl" title="Nederlands">NL</a>
+      <a href="index.html" lang="en" hreflang="en" aria-current="page">EN</a>
+    </div>
+    <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#zelf-samen" onclick="toggleNav()">What Babbl does</a>
+    <a href="#prototype" onclick="toggleNav()">The prototype</a>
+    <a href="#privacy" onclick="toggleNav()">Privacy</a>
+    <a href="#meedoen" onclick="toggleNav()">Get involved</a>
+    <a href="for-organisations.html">For organisations</a>
+    <a href="#over-ons" onclick="toggleNav()">About us</a>
+    <a href="#meedoen" class="nav-cta btn btn-primary" onclick="toggleNav()">Follow our progress</a>
+  </div>
+</nav>
+
+<!-- ─── 1 · HERO ───────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <a href="#prototype" class="tag tag-live">The first Babbls are on the table</a>
+        <h1 class="hero-title">Independent for longer.<br>With Babbl close by.</h1>
+        <p class="hero-sub">Babbl is a small, round device that sits on your table. You talk to it as you would to someone you trust — no screen, no hunting for buttons. And Babbl helps with everyday things: understanding a letter, remembering an appointment, sorting something out.</p>
+        <div class="hero-actions">
+          <a href="#zelf-samen" class="btn btn-primary btn-lg">Discover what Babbl does</a>
+          <a href="#meedoen" class="btn btn-secondary btn-lg">Follow our progress</a>
+        </div>
+        <div class="hero-benefits">
+          <span class="hero-benefit">Just talk</span>
+          <span class="hero-benefit">Stay in control</span>
+          <span class="hero-benefit">Help close by when you need it</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image img-block">
+          <img src="../assets/babbl-hero.webp" alt="Babbl: a low, round device with a fabric cover and a softly glowing ring around the button on top, on a wooden table" width="968" height="774">
+          <span class="hero-img-label">Design direction</span>
+        </div>
+        <div class="hero-talk" aria-label="Example of a conversation with Babbl">
+          <p class="say say-user">“Hoi babbl, when was I due at the dentist again?”</p>
+          <p class="say say-babbl">“Tuesday at half past ten. Shall I remind you on Monday evening?”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="talk-steps-wrap">
+  <div class="container">
+    <ol class="talk-steps" aria-label="How it works">
+      <li><span class="talk-num">1</span><div><strong>Say “hoi babbl”</strong><span>The ring lights up: Babbl is listening.</span></div></li>
+      <li><span class="talk-num">2</span><div><strong>Just ask</strong><span>The way you would ask a person.</span></div></li>
+      <li><span class="talk-num">3</span><div><strong>Babbl helps</strong><span>Yourself, together, or with a little help — you choose.</span></div></li>
+    </ol>
+  </div>
+</div>
+
+<!-- ─── 2 · ZELF. SAMEN. MET WAT HULP. ─────────────────── -->
+<section class="section bg-white zsh-intro" id="zelf-samen">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">How Babbl helps</span>
+      <h2 class="zsh-title">Yourself. <span>Together.</span> <em>With a little help.</em></h2>
+      <p>Staying independent doesn’t mean you have to do everything on your own. Sometimes you simply sort something out yourself. Sometimes you’d rather do it together with someone you trust. And sometimes a little extra help is welcome. Babbl fits in with what you need at that moment — while you stay in control.</p>
+    </div>
+
+    <!-- ─── 3 · SCENARIOS ─────────────────────────────── -->
+    <div class="scen" id="scenarios">
+      <p class="scen-lead">Here’s how that works in five everyday situations.</p>
+      <div class="scen-tabs" role="tablist" aria-label="Situations">
+        <button role="tab" id="tab-brief" aria-controls="scenario-brief" aria-selected="true">Letter</button>
+        <button role="tab" id="tab-afspraak" aria-controls="scenario-afspraak" aria-selected="false" tabindex="-1">Appointment</button>
+        <button role="tab" id="tab-vervoer" aria-controls="scenario-vervoer" aria-selected="false" tabindex="-1">Transport</button>
+        <button role="tab" id="tab-boodschappen" aria-controls="scenario-boodschappen" aria-selected="false" tabindex="-1">Shopping</button>
+        <button role="tab" id="tab-techniek" aria-controls="scenario-techniek" aria-selected="false" tabindex="-1">Technology</button>
+      </div>
+
+      <!-- Brief -->
+      <div class="scen-panel" role="tabpanel" id="scenario-brief" aria-labelledby="tab-brief">
+        <h3 class="scen-name">A letter on the doormat</h3>
+        <p class="scen-intro">A letter from the council, the hospital or another organisation. What exactly does it say? And do you need to do anything about it?</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Yourself</span><span class="level-sub">You sort it out yourself</span></div>
+            <p class="say say-user">“Babbl, can you explain what this letter says?”</p>
+            <p class="say say-babbl">“Of course. Could you take a photo of the letter with the Babbl app?”</p>
+            <p class="say-step"><span aria-hidden="true">📷</span> Photo taken with the Babbl app</p>
+            <p class="say say-babbl">“It’s a letter from the council about your new waste collection pass. You don’t need to do anything; the pass will arrive by itself.”</p>
+            <p class="level-note">You take a photo with the Babbl app on your phone. Babbl reads along and explains in plain language what it says, what matters and whether you need to do anything.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Together</span><span class="level-sub">With someone you trust</span></div>
+            <p class="say say-user">“Could you share this letter with my daughter as well?”</p>
+            <p class="say say-babbl">“I’ll send the letter and my explanation to Anne. Just this letter, nothing else.”</p>
+            <p class="level-note">You decide whether you share something, and with whom. That way you can look at it together.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">With a little help</span><span class="level-sub">Taking the next step</span></div>
+            <p class="say say-user">“I need to sort something out for this. Can you help me?”</p>
+            <p class="say say-babbl">“It says you need to phone before 15 October. Shall I look up the number and remind you on Monday morning?”</p>
+            <p class="level-note">First understand it, then take the next step yourself: remembering something, an appointment in the diary, the right phone number. And where needed, someone who can help.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Afspraak -->
+      <div class="scen-panel" role="tabpanel" id="scenario-afspraak" aria-labelledby="tab-afspraak">
+        <h3 class="scen-name">An appointment</h3>
+        <p class="scen-intro">Making an appointment is one thing. Knowing when and where you need to be, and remembering it, matters just as much.</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Yourself</span><span class="level-sub">You sort it out yourself</span></div>
+            <p class="say say-user">“When was I due at the dentist again?”</p>
+            <p class="say say-babbl">“Tuesday at half past ten. Shall I remind you on Monday evening and Tuesday morning?”</p>
+            <p class="level-note">Babbl checks your diary and helps you remember.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Together</span><span class="level-sub">With someone you trust</span></div>
+            <p class="say say-user">“Could you let Peter know what time my appointment is?”</p>
+            <p class="say say-babbl">“I’ll let Peter know you’re at the dentist on Tuesday at half past ten.”</p>
+            <p class="level-note">You share an appointment with whoever you like, whenever you like.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">With a little help</span><span class="level-sub">Everything around it taken care of</span></div>
+            <p class="say say-user">“Can you help me make sure I’m on time for my appointment on Tuesday?”</p>
+            <p class="say say-babbl">“Then I’ll set a reminder for ten o’clock. Would you also like me to help think about how you’ll get there?”</p>
+            <p class="level-note">Babbl helps you think about what’s needed around the appointment: reminders, information and — if you’d like — transport. <button type="button" class="scen-goto" data-goto="vervoer">See: transport →</button></p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Vervoer -->
+      <div class="scen-panel" role="tabpanel" id="scenario-vervoer" aria-labelledby="tab-vervoer">
+        <h3 class="scen-name">Getting somewhere</h3>
+        <p class="scen-intro">To the dentist, the hospital or an activity nearby. Babbl can help you get there in a way that suits you.</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Yourself</span><span class="level-sub">You go yourself</span></div>
+            <p class="say say-user">“What time do I need to leave for the dentist?”</p>
+            <p class="say say-babbl">“Your appointment is at half past ten. If you leave at ten, you’ll be in plenty of time. I’ll give you a nudge at quarter to ten.”</p>
+            <p class="level-note">You go yourself. Babbl makes sure you leave on time.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Together</span><span class="level-sub">With someone you trust</span></div>
+            <p class="say say-user">“Could you ask my daughter if she can take me to the dentist?”</p>
+            <p class="say say-babbl">“I’ll ask Anne. If she can, she’ll know straight away where and what time.”</p>
+            <p class="level-note">Babbl asks for you, and makes sure everyone knows where and when.</p>
+          </li>
+          <li class="level level-soon">
+            <div class="level-head"><span class="level-name">With a little help</span><span class="soon">Coming soon</span></div>
+            <p class="say say-user">“I need to go to the dentist on Tuesday, but I’ve got nobody to take me.”</p>
+            <p class="say say-babbl">“There’s a village car service in your area. Shall I book a ride for you on Tuesday?”</p>
+            <p class="level-note">In future, Babbl could for example book a local transport service such as the village car (dorpsauto) for you. Help doesn’t always have to come from family.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Boodschappen -->
+      <div class="scen-panel" role="tabpanel" id="scenario-boodschappen" aria-labelledby="tab-boodschappen">
+        <h3 class="scen-name">Shopping</h3>
+        <p class="scen-intro">Keeping track of what you need. Doing the shopping together. Or asking someone to pick something up.</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Yourself</span><span class="level-sub">You sort it out yourself</span></div>
+            <p class="say say-user">“Put coffee and milk on my shopping list.”</p>
+            <p class="say say-babbl">“Done. There are now five things on your list.”</p>
+            <p class="level-note">Babbl keeps track of what you need.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Together</span><span class="level-sub">With someone you trust</span></div>
+            <p class="say say-user">“My daughter is doing the shopping later.”</p>
+            <p class="say say-babbl">“Shall I show Anne your list? Then she’ll know straight away what you still need.”</p>
+            <p class="level-note">A shared list: people you trust can see what’s needed and add to it themselves. It’s still your own list.</p>
+          </li>
+          <li class="level level-soon">
+            <div class="level-head"><span class="level-name">With a little help</span><span class="soon">Coming soon</span></div>
+            <p class="say say-user">“I can’t manage to do the shopping myself this week.”</p>
+            <p class="say say-babbl">“Shall I ask someone from your circle? Or look at what options there are near you?”</p>
+            <p class="level-note">Soon Babbl will also be able to help with a neighbourhood initiative or a delivery service. Always with you as the starting point — never because a shop pays for it.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Techniek -->
+      <div class="scen-panel" role="tabpanel" id="scenario-techniek" aria-labelledby="tab-techniek">
+        <h3 class="scen-name">Stuck on a screen</h3>
+        <p class="scen-intro">An app that suddenly does something different, a notification you don’t understand, a phone that’s full. Sometimes you just get stuck.</p>
+        <ol class="levels">
+          <li class="level">
+            <div class="level-head"><span class="level-name">Yourself</span><span class="level-sub">You do it yourself</span></div>
+            <p class="say say-user">“My phone says the storage is full. What should I do?”</p>
+            <p class="say say-babbl">“That usually means there are lots of photos or videos on it. Shall we look together at what can go? First open Settings — that’s the little cog.”</p>
+            <p class="level-note">Babbl explains it step by step, at your own pace. You do it yourself.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">Together</span><span class="level-sub">With someone you trust</span></div>
+            <p class="say say-user">“Could you ask Daan if he can have a look at my phone on Saturday?”</p>
+            <p class="say say-babbl">“I’ll ask Daan, and tell him your storage is full. Then he’ll know straight away what it’s about.”</p>
+            <p class="level-note">Whoever helps knows straight away what’s going on. No long phone call beforehand.</p>
+          </li>
+          <li class="level">
+            <div class="level-head"><span class="level-name">With a little help</span><span class="level-sub">Through an organisation</span></div>
+            <p class="say say-user">“I can’t manage it, and the children are so busy.”</p>
+            <p class="say say-babbl">“Shall we call in SeniorWeb? They help with phones and computers, including at your home. I’ll look up the number for you and tell you what you can ask them.”</p>
+            <p class="level-note">Help can also come from an organisation. Babbl mentions SeniorWeb because they help, not because anyone pays for it.</p>
+          </li>
+        </ol>
+      </div>
+
+      <p class="scen-legend"><span class="soon">Coming soon</span> Where Babbl is growing.</p>
+    </div>
+
+    <div class="takeover">
+      <h3>Babbl doesn’t just take over.</h3>
+      <p>Babbl helps in the way that suits you at that moment. Yourself where you can, together where that’s nice, and with a little help when it’s needed. A little help today, back to doing it yourself tomorrow — it depends on the situation, not on a label.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 4 · PROTOTYPE ──────────────────────────────────── -->
+<section class="section" id="prototype">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Real, and in development</span>
+      <h2>Babbl is now on the table.</h2>
+      <p>What started as a simple idea — helping older adults stay independent for longer — is taking more and more shape. These are our first real Babbls.</p>
+      <p>They’re not finished yet. And that’s exactly the point. Because only when you can put Babbl on the table, talk to it and use it every day do you discover what really works well.</p>
+    </div>
+    <figure class="proto-photo">
+      <img src="../assets/prototypes-werktafel-2026-09.webp" width="1448" height="1086" loading="lazy"
+           alt="Two Babbl prototypes on a wooden workbench: a round Babbl with a grey fabric cover and a glowing ring on top, and an opened Babbl with visible speakers and wiring. In front lies the separate circuit board, with tools and a laptop around it.">
+      <figcaption>A look at our workbench — the first Babbl prototypes, September 2026. <span>(Photo lightly edited.)</span></figcaption>
+    </figure>
+
+    <div class="proto-story">
+      <div>
+        <h3>We’re building Babbl step by step</h3>
+        <p>How big should Babbl be? Are the controls pleasant to use? Is it easy to understand? And perhaps most important of all: does it feel natural to simply ask Babbl something?</p>
+        <p>We don’t want to work that out only from behind a desk. With these first prototypes we can try Babbl out, improve it and, soon, discover together with older adults what needs to be different or better.</p>
+        <p>That’s how Babbl grows, step by step, from a first prototype into a trusted assistant that can simply have its own spot in the home.</p>
+      </div>
+      <div class="progress" aria-label="Where Babbl is now">
+        <h4>Where we are now</h4>
+        <ol>
+          <li class="done"><span class="pdot" aria-hidden="true">✓</span><div><strong>First prototypes</strong><span>Done — they’re on the table.</span></div></li>
+          <li class="now"><span class="pdot" aria-hidden="true"></span><div><strong>First version in the works</strong><span>Now: the Babbl app, easy set-up, having letters explained, your diary, and handling important information safely.</span></div></li>
+          <li><span class="pdot" aria-hidden="true"></span><div><strong>Trying it out in practice</strong><span>Together with older adults and families.</span></div></li>
+          <li><span class="pdot" aria-hidden="true"></span><div><strong>Babbl for the home</strong><span>A device that’s ready for your living room.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 5 · WAT BABBL NOG MEER KAN ─────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-head">
+      <h2>Talking where it works. A screen where it helps.</h2>
+    </div>
+    <div class="more-grid">
+      <div class="solution-pillar">
+        <div class="solution-pillar-icon" aria-hidden="true">💬</div>
+        <div>
+          <h3>Just talk</h3>
+          <p>No menus or buttons to remember. You ask the way you would ask a person. And quick questions in between are fine too.</p>
+        </div>
+      </div>
+      <div class="solution-pillar">
+        <div class="solution-pillar-icon" aria-hidden="true">📱</div>
+        <div>
+          <h3>Babbl and the app</h3>
+          <p>Babbl itself is for talking to. The app is there for when a screen is handy: for setting up, for photographing a letter or for safely confirming something.</p>
+        </div>
+      </div>
+      <div class="solution-pillar">
+        <div class="solution-pillar-icon" aria-hidden="true">✉️</div>
+        <div>
+          <h3>Your email, in plain language</h3>
+          <p>Babbl tells you what has come in: who it’s from, what’s important, and what can’t be trusted. Babbl skips the adverts. Before sending a reply, Babbl reads it out to you first.</p>
+        </div>
+      </div>
+      <div class="solution-pillar">
+        <div class="solution-pillar-icon" aria-hidden="true">🔒</div>
+        <div>
+          <h3>Important things kept safe</h3>
+          <p>Information that really matters gets extra protection. That’s why, for some things, Babbl asks you to confirm first.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 5b · IS DIT NORMAAL? IS DIT VEILIG? ─────────────── -->
+<section class="section bg-muted" id="veilig">
+  <div class="container">
+    <div class="safe-inner">
+      <div class="safe-copy">
+        <span class="tag">Scams and fake messages</span>
+        <h2>“Is this normal? Is this really safe?”</h2>
+        <p>An email from “the bank”, a text about a missed parcel, a phone call about your bank card. Scammers are getting smarter all the time. Not sure? Just ask Babbl, before you do anything.</p>
+        <p>If you link your email to Babbl, Babbl keeps an eye out too: messages that can’t be trusted are flagged separately — and Babbl never acts on them.</p>
+        <ul class="safe-chips" aria-label="Examples">
+          <li>“Someone from the bank is asking for my PIN. Is that allowed?”</li>
+          <li>“I have to pay for a parcel. Is that real?”</li>
+          <li>“Should I click the link in this email?”</li>
+          <li>“I’ve got a bill I don’t recognise. Do I have to pay it?”</li>
+          <li>“Is this email from DigiD genuine?”</li>
+          <li>“Someone from the bank called. Should I hand over my card?”</li>
+        </ul>
+        <p class="safe-note">For a phone call or text, you tell Babbl what happened. A letter you don’t trust, you photograph with the app.</p>
+      </div>
+      <div class="safe-convo">
+        <p class="say say-user">“Babbl, is there any post?”</p>
+        <p class="say say-babbl">“You have three new emails. One from your grandson Daan, one from the council about your waste collection pass, and one I don’t trust: it looks like it’s from your bank, but it isn’t. I’ll leave the adverts.”</p>
+        <p class="say say-user">“The one from the bank… what do I need to do with my bank card?”</p>
+        <p class="say say-babbl">“Nothing. This email is very probably fake. Your bank will never ask for your card or your PIN. I won’t open the link and I’ll leave the message alone. Would you like to phone the bank yourself? The number is on the back of your card.”</p>
+        <p class="say say-user">“Could you ask Anne to have a look with me?”</p>
+        <p class="say say-babbl">“I’ll ask Anne.”</p>
+        <p class="safe-convo-note">Yourself, or together — you choose.</p>
+      </div>
+    </div>
+
+    <div class="safe-built">
+      <h3>And built in, so a scammer can’t get in through Babbl</h3>
+      <div class="principles principles-3">
+        <div class="principle">
+          <div class="principle-icon" aria-hidden="true">🏠</div>
+          <h3>New people only at your home</h3>
+          <p>Adding someone to your circle happens at Babbl, in your home, out loud. A scammer on the phone can’t arrange that remotely.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon" aria-hidden="true">📇</div>
+          <h3>No new numbers through a conversation</h3>
+          <p>Babbl only sends things to people and addresses you already know. Just saying something won’t add a new number or address.</p>
+        </div>
+        <div class="principle">
+          <div class="principle-icon" aria-hidden="true">🔑</div>
+          <h3>Your keys stay at home</h3>
+          <p>Your passwords and keys never leave the device.</p>
+        </div>
+      </div>
+      <p class="safe-honest">Babbl thinks things through with you, but it can get things wrong. Still unsure? Call the organisation yourself, on a number you already know.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 6 · ONTWORPEN OM THUIS TE HOREN ────────────────── -->
+<section class="section design">
+  <div class="container">
+    <div class="design-inner">
+      <div class="design-copy">
+        <span class="tag">What we’re working towards</span>
+        <h2>Designed to belong at home.</h2>
+        <p>Babbl is full of technology, but it doesn’t need to look like it. We’re building the final device on what we learn from our prototypes: easy to use, pleasant to talk to and designed to simply find its place in the home.</p>
+        <ul class="design-points">
+          <li>The same round shape as the prototype — a little lower, so it sits quietly on a table or shelf.</li>
+          <li>A larger button with a light ring, flush with the top.</li>
+          <li>A soft fabric cover, in colours that suit your home. Ideally interchangeable.</li>
+          <li>No screen. Babbl is for talking to.</li>
+        </ul>
+      </div>
+      <figure class="design-visual">
+        <img src="../assets/babbl-kleuren-ontwerprichting.webp" width="1536" height="1024" loading="lazy"
+             alt="Four Babbls on a coffee table in a bright living room: round and low, with fabric covers in sage green, terracotta, ivory and blue, and a glowing ring around the button on top.">
+        <figcaption>Design direction (render), not a final product. Shape and colours may still change.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 7 · UW VERTROUWDE KRING ────────────────────────── -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="content-2col">
+      <div class="content-image">
+        <img src="../assets/09-daughter-visits-mother.webp" alt="A daughter comes to visit and hugs her mother in the doorway" width="1536" height="1024" loading="lazy">
+      </div>
+      <div>
+        <span class="tag">Your trusted circle</span>
+        <h2 class="content-title" style="margin-top:16px;">People close by, if you’d like.</h2>
+        <p class="content-text">Babbl is there for you first and foremost. But sometimes it’s nice to bring someone in. You can invite people you trust into your circle — your daughter, a neighbour, a friend.</p>
+        <ul class="content-list">
+          <li>Helping think about an appointment</li>
+          <li>Keeping a shopping list together</li>
+          <li>Responding when you ask for help</li>
+          <li>Looking at a letter or message that you choose to share with them</li>
+        </ul>
+        <p class="content-text kring-note">You decide who belongs and what they can see. Babbl doesn’t keep watch on anyone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 8 · DE WERELD RONDOM BABBL ─────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="soon">Coming soon</span>
+      <h2>You tell Babbl what you want to sort out. Babbl helps you find the right way.</h2>
+      <p>More and more goes through apps, websites and login codes. You don’t need to know which organisation or system is behind it. Babbl can become the bridge: to family and neighbours, but also to the world around you.</p>
+    </div>
+    <div class="route">
+      <p class="say say-user route-ask">“I need to go to the dentist on Tuesday, but I’ve got no transport.”</p>
+      <div class="route-hub" aria-hidden="true"><span>babbl<b>.</b></span></div>
+      <ul class="route-ways">
+        <li><strong>Anne</strong><span>Your daughter, if she can</span></li>
+        <li><strong>A neighbourhood volunteer</strong><span>Through a community care organisation</span></li>
+        <li><strong>The village car</strong><span>A local transport service</span></li>
+      </ul>
+    </div>
+    <p class="route-kinds">Think of: local transport · community and social activities · the council · care providers · your diary · shopping and delivery</p>
+    <p class="route-trust"><strong>Your interests first.</strong> Babbl advises in your interest. If services from companies are ever added, that will always be clear — and nobody pays to be recommended by Babbl.</p>
+  </div>
+</section>
+
+<!-- ─── 9 · PRIVACY & VERTROUWEN ───────────────────────── -->
+<section class="section bg-white" id="privacy">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">Privacy &amp; trust</span>
+      <h2 style="margin-top:16px;">Your information, your control.</h2>
+    </div>
+    <div class="principles principles-4">
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🧭</div>
+        <h3>You stay in control</h3>
+        <p>Babbl only shares something with others if you want it to.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🤝</div>
+        <h3>Clear agreements</h3>
+        <p>People in your circle only see what you give permission for.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🔐</div>
+        <h3>Extra protection</h3>
+        <p>Sensitive information gets an extra layer of security.</p>
+      </div>
+      <div class="principle">
+        <div class="principle-icon" aria-hidden="true">🇪🇺</div>
+        <h3>Our own servers in the EU</h3>
+        <p>Your speech is processed on infrastructure we manage ourselves, in the EU. Your keys never leave the device.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:40px;"><a href="privacy.html" class="btn btn-secondary">Read how we handle your information</a></p>
+  </div>
+</section>
+
+<!-- ─── 10 · SAMEN ONTDEKKEN WAT ECHT WERKT ───────────── -->
+<section class="section" id="meedoen">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">The next step</span>
+      <h2 style="margin-top:16px;">Discovering together what really works.</h2>
+      <p>The next step is the most important one: using Babbl with the people we’re making it for. In the coming period we’re looking for people and organisations who would like to take part.</p>
+    </div>
+    <div class="org-features join-cards">
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🏡</div>
+        <h3>Older adults and families</h3>
+        <p>Would you like to try Babbl and tell us what you think? Sign up; we’ll be in touch as soon as there’s a place.</p>
+        <a href="#wachtlijst" class="join-link">Sign up ↓</a>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🤝</div>
+        <h3>Organisations</h3>
+        <p>Do you work with older adults, in community care, a neighbourhood initiative or around independent living? Help us think about testing in practice.</p>
+        <a href="for-organisations.html#aanmelden" class="join-link">Sign up your organisation →</a>
+      </div>
+      <div class="org-feature">
+        <div class="org-feature-icon" aria-hidden="true">🔗</div>
+        <h3>Partners</h3>
+        <p>Do you offer a service that ought to be easier to reach? Let’s look at how that could work through Babbl.</p>
+        <a href="for-organisations.html#aanmelden" class="join-link">Get in touch as a partner →</a>
+      </div>
+    </div>
+
+    <div class="waitlist" id="wachtlijst">
+      <h3 class="waitlist-title">Keep me posted</h3>
+      <p class="waitlist-text">For older adults, families and anyone who’d like to follow along. You’ll hear from us as soon as there’s a place to take part.</p>
+      <p class="form-note" style="margin:-16px 0 24px;">Contacting us on behalf of an organisation? Use the <a href="for-organisations.html#aanmelden" style="color:var(--primary);text-decoration:underline;">sign-up form for organisations</a>.</p>
+      <form class="waitlist-form" id="waitlistForm" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitForm(event)">
+        <input type="hidden" name="form-name" value="waitlist"/>
+        <p hidden><label>Do not fill in: <input name="bot-field"/></label></p>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" required/>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required/>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="rol">I am…</label>
+          <select id="rol" name="rol">
+            <option value="">Please choose (optional)</option>
+            <option value="Iemand die Babbl zelf wil gebruiken">Someone who would like to use Babbl myself</option>
+            <option value="Familie of naaste">Family member or someone close</option>
+            <option value="Anders">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Anything you’d like to share? <span style="font-weight:normal;opacity:.7;">(optional)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="For example: what could Babbl help you with?"></textarea>
+        </div>
+        <label class="form-consent" for="consent">
+          <input type="checkbox" id="consent" name="consent" required/>
+          <span>I agree that Babbl may use my name and email address to contact me about the development of Babbl. See our <a href="privacy.html">privacy policy</a>.</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Keep me posted</button>
+        <p class="form-note">No spam. You can unsubscribe at any time.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div style="font-size:2rem;margin-bottom:16px;">✓</div>
+        <h3>Thank you!</h3>
+        <p>We’ll keep you posted and be in touch as soon as there’s a place to take part.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 11 · OVER ONS ──────────────────────────────────── -->
+<section class="section bg-white" id="over-ons">
+  <div class="container">
+    <div class="founder">
+      <span class="tag">How Babbl began</span>
+      <h2>It started with something we saw around us.</h2>
+      <p>People who manage their lives perfectly well on their own, but more and more often get stuck on a letter, an app or a login code. Not because they can’t do it, but because more and more goes through screens and systems.</p>
+      <p>After many conversations — with older adults, families and people working in care and community services — and a lot of trying things out, the first prototypes are now on the table and the software is being built.</p>
+      <p>Babbl is still young. The next steps: finishing the first version, testing it in practice, working with organisations and building a team around Babbl. Would you like to talk about that? I’d love to hear from you.</p>
+      <p class="founder-sign">Eric Hendriks, founder · <a href="contact.html">Get in touch</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 12 · FINAL CTA + FAQ ───────────────────────────── -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="cta-section" style="margin-top:0;">
+      <h2>Would you like to share ideas, take part or find out more?</h2>
+      <p>Whether you’d like to use Babbl yourself, know someone it might suit, or want to work with us as an organisation: we’d love to hear from you.</p>
+      <div class="btn-group">
+        <a href="#wachtlijst" class="btn btn-primary btn-lg">Follow our progress</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="faq-inner">
+      <h2 class="faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Can I buy Babbl yet?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Not yet. The first prototypes exist and the first version is being built now. Testing in practice comes after that. Would you like to stay informed? <a href="#wachtlijst" style="color:var(--primary);">Leave your details.</a></p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Who is Babbl for?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>For anyone who wants to keep handling everyday things themselves for as long as possible. People around you can join in if you’d like.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Is my family watching over my shoulder?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>No. Babbl doesn’t keep watch on anyone. People in your circle only see what you share with them, and you decide who is in your circle.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Does Babbl help against scams?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Unsure about a phone call, text, email or letter? Ask Babbl before you do anything; Babbl thinks it through with you and tells you honestly what it makes of it. If you’ve linked your email, Babbl flags suspicious messages separately and never acts on them. On top of that, nobody can simply add a new number or get into your circle through a conversation with Babbl. Babbl can get things wrong: if in doubt, call the organisation yourself, on a number you already know. <a href="#veilig" style="color:var(--primary);">More about this.</a></p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Do I need any technical knowledge?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>No. You simply talk to Babbl. For setting up and for some secure actions you use the Babbl app; someone you trust can help you with that too.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What about my information?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Your speech is processed on servers we manage ourselves, in the EU. Babbl shares nothing with others unless you want it to, and what Babbl remembers about you is encrypted with a key that exists only in your device. <a href="privacy.html" style="color:var(--primary);">Read more about privacy.</a></p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What does Babbl cost?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Pricing details will follow later. Our aim is to make Babbl accessible to everyone who would benefit from it.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="more-links" aria-label="Find out more">
+      <span>Find out more:</span>
+      <a href="how-it-works.html">How it works</a>
+      <a href="for-older-adults.html">For older adults</a>
+      <a href="for-families.html">For families</a>
+      <a href="for-organisations.html">For organisations</a>
+      <a href="our-vision.html">Our vision</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">babbl<span>.</span></div>
+        <p class="footer-mission">Babbl helps older adults stay independent for longer. Yourself. Together. With a little help.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Babbl</h4>
+        <ul>
+          <li><a href="#zelf-samen">What Babbl does</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="#prototype">The prototype</a></li>
+          <li><a href="our-vision.html">Our vision</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Who it’s for</h4>
+        <ul>
+          <li><a href="for-older-adults.html">For older adults</a></li>
+          <li><a href="for-families.html">For families</a></li>
+          <li><a href="for-organisations.html">For organisations</a></li>
+          <li><a href="for-organisations.html#aanmelden">Sign up as an organisation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#meedoen">Get involved</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Babbl. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navMobile').classList.toggle('open');
+}
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ── Scenario tabs ───────────────────────────────────────
+// All four panels are in the HTML; without JS they simply show stacked.
+(function () {
+  const tabs = Array.from(document.querySelectorAll('.scen-tabs [role="tab"]'));
+  if (!tabs.length) return;
+
+  function select(tab, focus) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', e => {
+      const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      select(tabs[(i + d + tabs.length) % tabs.length], true);
+    });
+  });
+
+  document.querySelectorAll('.scen-goto').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = document.getElementById('tab-' + btn.dataset.goto);
+      select(tab, true);
+      document.getElementById('scenarios').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const fromHash = location.hash.match(/^#scenario-(\w+)/);
+  select(document.getElementById('tab-' + (fromHash ? fromHash[1] : 'brief')) || tabs[0]);
+})();
+
+// ── Signup capture (Netlify Forms) ──────────────────────
+// Signups are captured by Netlify on the deployed site (Forms → "waitlist").
+// Opening this file locally just shows the thank-you.
+
+function showWaitlistSuccess() {
+  document.getElementById('waitlistForm').style.display = 'none';
+  document.getElementById('formSuccess').classList.add('show');
+}
+
+function encodeFormData(data) {
+  return Object.keys(data)
+    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+}
+
+async function submitForm(e) {
+  e.preventDefault();
+  const form = document.getElementById('waitlistForm');
+  const btn = form.querySelector('button[type="submit"]');
+  const payload = {
+    'form-name': 'waitlist',
+    firstName: document.getElementById('firstName').value,
+    email: document.getElementById('email').value,
+    rol: document.getElementById('rol').value,
+    message: document.getElementById('message').value,
+    consent: document.getElementById('consent').checked ? 'ja' : 'nee',
+  };
+
+  btn.disabled = true;
+  btn.textContent = 'Just a moment…';
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encodeFormData(payload),
+    });
+    if (!res.ok) throw new Error('Signup failed: ' + res.status);
+    showWaitlistSuccess();
+  } catch (err) {
+    // No server behind a local file:// preview; on Netlify this only runs for real errors.
+    console.warn('Babbl: signup POST did not reach a server ' +
+      '(expected when previewing locally). Error:', err);
+    showWaitlistSuccess();
+  }
+}
+</script>
+</body>
+</html>

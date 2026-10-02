@@ -1169,3 +1169,16 @@ html.js .scen-panel + .scen-panel { margin-top: 0; }
   font-size: .75rem; color: var(--text-muted);
   background: var(--bg-muted); border-radius: 50px; padding: 4px 12px;
 }
+
+/* ─── LANGUAGE SWITCH ─────────────────────────────────── */
+.lang-switch {
+  display: flex; align-items: center; flex-shrink: 0; margin-left: auto;
+  border: 1px solid var(--border); border-radius: 50px; padding: 3px;
+}
+.lang-switch a {
+  font-size: .75rem; font-weight: 500; letter-spacing: .04em;
+  color: var(--text-muted); padding: 5px 10px; border-radius: 50px;
+  transition: color .2s, background .2s;
+}
+.lang-switch a:hover { color: var(--text); }
+.lang-switch a[aria-current="page"] { background: var(--text); color: var(--bg); }

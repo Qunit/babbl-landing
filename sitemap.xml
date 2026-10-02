@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://babbl.family/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/hoe-het-werkt</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/voor-ouderen</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/voor-familie</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/voor-organisaties</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/privacy</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/onze-visie</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://babbl.family/contact</loc><lastmod>2026-09-25</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://babbl.family/</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/"/></url>
+  <url><loc>https://babbl.family/en/</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/"/></url>
+  <url><loc>https://babbl.family/hoe-het-werkt</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/hoe-het-werkt"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/how-it-works"/></url>
+  <url><loc>https://babbl.family/en/how-it-works</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/hoe-het-werkt"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/how-it-works"/></url>
+  <url><loc>https://babbl.family/voor-ouderen</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-ouderen"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-older-adults"/></url>
+  <url><loc>https://babbl.family/en/for-older-adults</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-ouderen"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-older-adults"/></url>
+  <url><loc>https://babbl.family/voor-familie</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-familie"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-families"/></url>
+  <url><loc>https://babbl.family/en/for-families</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-familie"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-families"/></url>
+  <url><loc>https://babbl.family/voor-organisaties</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-organisaties"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-organisations"/></url>
+  <url><loc>https://babbl.family/en/for-organisations</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/voor-organisaties"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/for-organisations"/></url>
+  <url><loc>https://babbl.family/privacy</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/privacy"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/privacy"/></url>
+  <url><loc>https://babbl.family/en/privacy</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/privacy"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/privacy"/></url>
+  <url><loc>https://babbl.family/onze-visie</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/onze-visie"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/our-vision"/></url>
+  <url><loc>https://babbl.family/en/our-vision</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/onze-visie"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/our-vision"/></url>
+  <url><loc>https://babbl.family/contact</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/contact"/></url>
+  <url><loc>https://babbl.family/en/contact</loc><lastmod>2026-10-02</lastmod><xhtml:link rel="alternate" hreflang="nl" href="https://babbl.family/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://babbl.family/en/contact"/></url>
 </urlset>
