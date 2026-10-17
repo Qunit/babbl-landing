@@ -1,0 +1,16 @@
+# The app association files (ADR-0150 §3, ADR-0151): JSON, and not cached for long, so a change
+# reaches phones the same day.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: public, max-age=3600
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=3600
+
+# The invitation page: no search engine, and no referrer — the token is in the fragment anyway.
+/join
+  X-Robots-Tag: noindex
+  Referrer-Policy: no-referrer
+/join.html
+  X-Robots-Tag: noindex
+  Referrer-Policy: no-referrer
