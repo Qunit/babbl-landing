@@ -11,7 +11,7 @@
     .join { max-width: 34rem; margin: 0 auto; }
     .join .btn { display: block; text-align: center; margin: 1rem 0; }
     .join .note { color: #6B5B4E; font-size: 0.95rem; }
-    .join .step { margin-top: 2rem; }
+    .join .join-step { margin-top: 2rem; }
     .join [hidden] { display: none !important; }
     .join code { word-break: break-all; }
   </style>
@@ -33,13 +33,13 @@
        Hij of zij noemt u daarbij een <strong>code van zes cijfers</strong>; die heeft u straks nodig.</p>
 
     <div id="ios" hidden>
-      <div class="step">
+      <div class="join-step">
         <h2>1. Installeer de app</h2>
         <a id="ios-store" class="btn btn-primary" href="#">Installeer babbl</a>
         <p id="ios-not-yet" class="note" hidden>De app is nog niet in de App Store.
           Vraag degene die u uitnodigde om toegang tot de testversie.</p>
       </div>
-      <div class="step">
+      <div class="join-step">
         <h2>2. Open de uitnodiging</h2>
         <p>Geïnstalleerd? Tik dan hier:</p>
         <a id="ios-open" class="btn btn-secondary" href="#">Open de uitnodiging</a>
@@ -73,8 +73,9 @@
   var token = new URLSearchParams(location.hash.slice(1)).get("t") || "";
   var ok = /^[A-Za-z0-9_-]{16,256}$/.test(token);
   var ua = navigator.userAgent;
-  var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var android = /Android/.test(ua);
+  // An iPad reports itself as a Mac; one with a touch screen is an iPad.
+  var ios = !android && (/iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1));
   var scheme = "babbl://join?token=" + encodeURIComponent(token);
 
   function show(id) { document.getElementById(id).hidden = false; }
