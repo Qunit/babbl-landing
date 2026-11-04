@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.babbl",
+      "sha256_cert_fingerprints": [
+        "FA:09:C0:A9:B8:01:9A:7F:40:2E:E7:A4:7E:B9:26:56:BA:96:7B:A6:CE:BD:F0:98:D8:20:BB:97:E7:B3:ED:8E"
+      ]
+    }
+  }
+]

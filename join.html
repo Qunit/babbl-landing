@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Uitnodiging voor babbl</title>
+  <meta name="robots" content="noindex"/>
+  <meta name="referrer" content="no-referrer"/>
+  <link rel="stylesheet" href="/style.css"/>
+  <style>
+    .join { max-width: 34rem; margin: 0 auto; }
+    .join .btn { display: block; text-align: center; margin: 1rem 0; }
+    .join .note { color: #6B5B4E; font-size: 0.95rem; }
+    .join .join-step { margin-top: 2rem; }
+    .join [hidden] { display: none !important; }
+    .join code { word-break: break-all; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">babbl<span>.</span></a>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container join">
+    <!-- An invitation (ADR-0151). The token is in the address after "#": it never reaches a server.
+         With the app installed this page does not open at all — the phone hands the link to the app. -->
+    <h1>U bent uitgenodigd voor babbl</h1>
+    <p>Iemand heeft u uitgenodigd om mee te doen in een huishouden in de babbl-app.
+       Hij of zij noemt u daarbij een <strong>code van zes cijfers</strong>; die heeft u straks nodig.</p>
+
+    <div id="ios" hidden>
+      <div class="join-step">
+        <h2>1. Installeer de app</h2>
+        <a id="ios-store" class="btn btn-primary" href="#">Installeer babbl</a>
+        <p id="ios-not-yet" class="note" hidden>De app is nog niet in de App Store.
+          Vraag degene die u uitnodigde om toegang tot de testversie.</p>
+      </div>
+      <div class="join-step">
+        <h2>2. Open de uitnodiging</h2>
+        <p>Geïnstalleerd? Tik dan hier:</p>
+        <a id="ios-open" class="btn btn-secondary" href="#">Open de uitnodiging</a>
+      </div>
+    </div>
+
+    <div id="android" hidden>
+      <a id="android-store" class="btn btn-primary" href="#">Installeer babbl</a>
+      <p class="note">Na het installeren opent babbl de uitnodiging vanzelf.</p>
+      <a id="android-open" class="btn btn-secondary" href="#">De app staat er al: open de uitnodiging</a>
+    </div>
+
+    <div id="desktop" hidden>
+      <p>Open deze link op uw <strong>telefoon</strong>: daar staat de babbl-app.
+         Stuur hem uzelf, bijvoorbeeld per e-mail of bericht:</p>
+      <p><code id="desktop-link"></code></p>
+    </div>
+
+    <p id="broken" hidden>Deze link is niet compleet. Vraag degene die u uitnodigde om hem opnieuw te sturen.</p>
+  </div>
+</section>
+
+<script>
+  // Where the app is installed from. Until publication: TestFlight and Play's internal testing
+  // track (ADR-0151 §4). An empty iOS link says the app is not in the store yet.
+  var STORES = {
+    ios: "",  // e.g. https://testflight.apple.com/join/XXXXXXXX, later the App Store
+    play: "https://play.google.com/store/apps/details?id=app.babbl"
+  };
+
+  var token = new URLSearchParams(location.hash.slice(1)).get("t") || "";
+  var ok = /^[A-Za-z0-9_-]{16,256}$/.test(token);
+  var ua = navigator.userAgent;
+  var android = /Android/.test(ua);
+  // An iPad reports itself as a Mac; one with a touch screen is an iPad.
+  var ios = !android && (/iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1));
+  var scheme = "babbl://join?token=" + encodeURIComponent(token);
+
+  function show(id) { document.getElementById(id).hidden = false; }
+
+  if (!ok) {
+    show("broken");
+  } else if (ios) {
+    show("ios");
+    var store = document.getElementById("ios-store");
+    if (STORES.ios) { store.href = STORES.ios; } else { store.hidden = true; show("ios-not-yet"); }
+    // A link to this same site would stay in Safari; the app's own scheme opens it.
+    document.getElementById("ios-open").href = scheme;
+  } else if (android) {
+    show("android");
+    // Play hands the token to the app on its first start (install referrer): no copying.
+    document.getElementById("android-store").href =
+      STORES.play + "&referrer=" + encodeURIComponent("t=" + token);
+    document.getElementById("android-open").href = scheme;
+  } else {
+    show("desktop");
+    document.getElementById("desktop-link").textContent = location.href;
+  }
+</script>
+</body>
+</html>

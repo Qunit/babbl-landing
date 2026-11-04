@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["833FAX7ZY6.app.babbl"],
+        "components": [
+          { "/": "/join", "comment": "An invitation (ADR-0151): babbl.family/join#t=..." },
+          { "/": "/join/*" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["833FAX7ZY6.app.babbl"]
+  }
+}
